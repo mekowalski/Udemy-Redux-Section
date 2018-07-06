@@ -1,0 +1,7 @@
+-Redux is a predictable state container for JavaScript applications
+
+-The app is really divided into 2 separate parts:
+  1. the data that powers the app
+  2. the views that display that data
+
+-Separate the views in application from the data in the application
