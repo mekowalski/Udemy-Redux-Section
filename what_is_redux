@@ -5,3 +5,11 @@
   2. the views that display that data
 
 -Separate the views in application from the data in the application
+
+REDUX: is the data contained inside the application
+  - a collection that contains all the data in the application, hard data and meta-level
+
+REACT: is the views contained inside the application
+  - displays the data with views on the screen, something the user can have interaction with
+
+REDUX: centralizes all of the app's data into a single object, referred to as the STATE
