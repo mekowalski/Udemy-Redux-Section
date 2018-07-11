@@ -18,3 +18,5 @@ CONTAINER: react component that has direct connection to the state managed by re
 *together they form a working usable app* = REACT-REDUX
 
 REACT-REDUX: forms the bridge between separate libraries
+
+SMART COMPONENTS(containers): have direct connection to redux
