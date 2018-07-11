@@ -1,0 +1,39 @@
+-Everything in Redux application mostly starts off from event triggered by a user, directly or indirectly
+  (clicking on a button, selecting from a list or hovering over an element)
+  (ajax request loading up or a page initially loading)
+-All these events^^^ can call an action creator
+
+ACTION CREATOR: function that returns an action
+1. a user can click a button and call an action creator which is a function that returns an object
+
+  function(
+    return {
+      type: BOOK_SELECTED
+      book: {title: 'Book 2'}
+    }
+  )
+
+2. that object is automatically sent to all the different reducers in the application
+
+  {
+    type: BOOK_SELECTED,
+    book: {title: 'Book 2'}
+  }
+
+3. reducers can choose to return a different piece of state, depending on what the action is
+
+  switch(action type) {
+  case BOOK_SELECTED:
+    return actionbook
+  default:
+    //I don't care about this action, do nothing
+    return currentState
+  }
+
+4. newly returned piece of state then gets piped into the application state, and the application state
+     then gets pumped back into React application causing components to rerender
+
+  {
+    activeBook: {title: 'JavaScript'}
+    books: [ {title: 'The First Book'}, {title: 'The Second Book'} ]
+  }
