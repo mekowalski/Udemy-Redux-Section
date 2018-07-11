@@ -10,3 +10,11 @@ REDUCER: a function that returns a piece of the application's state
 
 //L7: Books Reducer
 //L8: ActiveBooks Reducer
+
+
+CONTAINER: react component that has direct connection to the state managed by redux
+-data in the application
+-views in the application
+*together they form a working usable app* = REACT-REDUX
+
+REACT-REDUX: forms the bridge between separate libraries
