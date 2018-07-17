@@ -13,3 +13,7 @@ REACT: is the views contained inside the application
   - displays the data with views on the screen, something the user can have interaction with
 
 REDUX: centralizes all of the app's data into a single object, referred to as the STATE
+
+
+React handles the view part of the MVC structure
+Redux keeps track of current state of data
