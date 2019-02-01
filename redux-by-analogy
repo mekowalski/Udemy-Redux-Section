@@ -83,9 +83,20 @@ What is going on with the new Form
 3. Delete Policy
 
 
+CLAIMS HISTORY DEPARTMENT
 a. Form Receiver gives the Claims Dept the New Form and the current/previous list of Claims
 b. Only when a Dept is given a Form will they be given the dataset from the Data Bank
 c. Up to the Dept to update the Claims History in the Dept and Data Bank
 d. Claims will determine if Form coming in is trying to create a Claim(Form Type)
   -No: Take that list of claims given and return it to the Data Bank
   -Yes: Take the Payload, add it to the list of Claims and update that in the Data Bank
+
+
+ACCOUNTING DEPARTMENT
+a. Form Receiver gives the Accounting Dept the New Form and the info on the Company money from Data Bank
+b. Accounting will look at Form and see if it is a Claim
+  -Yes: Pull the Payload from the Form, see how much the Customer wants, then pays them
+    -They will then return the rest of the money back to the Data Bank with the updated amount
+  -No: Accounting will probably look for Forms for creating Policy
+    -Yes: That will take the amount of money to sign up for the Policy and return it updated to Data Bank
+    -No: If Form is not a Claim or Policy then the Accounting Dept won't care and return it back to Data Bank
