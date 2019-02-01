@@ -68,10 +68,16 @@ What is going on with the new Form
 -Every Form that is filled out by a Customer has 2 parts(paper with field and field at the bottom)
 -Have different TYPEs of Forms for creating Claim and Policy
 -Type: Declares the purpose of the Form
--
+-Payload: body of Form with info that's relevant to the Customer(Name and Claim Amount)
 
                   CLAIM
     FORM   --->     |
                     |
                 Name: Malind          <---TYPE
               Claim Amount: $500      <---PAYLOAD
+
+-Insurance Co would need 3 Types of Forms
+-Each Form will have a different set of info for its Payload
+1. Create Policy
+2. Create Claim
+3. Delete Policy
