@@ -6,3 +6,9 @@ REDUX CYCLE
 Action Creator           ---> Action   ---> Dispatch      ---> Reducers    ---> State
 Person dropping off Form ---> the Form ---> Form Receiver ---> Departments ---> Compiled Dept Data
 INSURANCE COMPANY
+
+Action Creator: Starts with Customer dropping a Form off
+  -Function that creates/returns plain JS object
+
+Action: Form describes how they want to change data within the company including a Type and Payload
+  -Plain JS object(Action) that has a Type and Payload property
