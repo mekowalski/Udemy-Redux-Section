@@ -17,6 +17,12 @@ eg: Claims History
 const claimsHistory = (oldClaims, action) => {
   if (action.type === 'CREATE_CLAIM') {
     //we care about this action (Form)
+    return [...oldClaims, action.payload]
+    //ES15 syntax, takes an original array, add it to a brand new array then add the new record(action.payload)
   }
   //then we don't care about the action (Form)
 }
+
+//Console
+const numbers = [1, 2, 3] => undefined
+[...numbers, 4] => (4) [1, 2, 3, 4]
