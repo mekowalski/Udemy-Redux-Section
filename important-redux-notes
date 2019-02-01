@@ -20,3 +20,16 @@ DISPATCH
 -Each Dispatch that is called (store.dispatch()) runs a whole Redux Cycle
 -Can still modify the State object after running .dispatch with store.getState()
 -At any point, Store can pull out State and read the current Data for app
+-Only modify State object through use of Dispatch functions, Action Creators and Actions
+-NO way to reach into Store and modify State manually
+eg: store.state.accounting - 30 (NOT GOING TO HAPPEN)
+
+
+WHY IS THIS THE SETUP?
+-Traditional App, as it gets bigger, the code written is more complex and harder to understand
+
+-With Redux, there is a bit of a steady curve for growing complexity
+-Initial complexity is higher with Redux
+-But because Data can only be changed through Action Creators, then app self-documents
+-Other developers looking/using/modifying code will already see what Actions are available
+-Only want to have a small set of ways to modify the app's Data
