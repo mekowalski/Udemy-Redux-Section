@@ -1,9 +1,16 @@
 Overall Idea of How Redux Library Works
 
 REDUX CYCLE
--To change the State of app, call on Action Creator
+-To change the State/Data of app, call on Action Creator
 1. Action Creator: Produces an Action
 2. Action: Gets fed to Dispatch
 3. Dispatch: Forwards the Action to Reducers
 4. Reducers: Creates new State
 5. State: Will wait until it needs to be updated again
+
+
+COMBINEREDUCERS CALL
+-Different Reducers put together are all simple functions
+-Functions need to be wired together
+-Making use of combineReducers wire up the Reducers altogether
+-When using specific key names of the Reducer names, there ends up being a State object
