@@ -5,3 +5,18 @@ Skip over Dispatch and implement Reducers
 1. Claims Reducer
 2. Accounting Reducer
 3. Policies Reducer
+
+-Each Reducer will be called with an Action(Form)
+-Reducer will inspect the Action(Form) and decide whether or not it needs to modify data based on Action
+-Each Reducer is passed 2 pieces of arguments in the same order
+  1. Whatever existing Data from Data Bank belongs to the Dept
+  2. Action(Form)
+
+eg: Claims History
+//REDUCERS(Departments)
+const claimsHistory = (oldClaims, action) => {
+  if (action.type === 'CREATE_CLAIM') {
+    //we care about this action (Form)
+  }
+  //then we don't care about the action (Form)
+}
