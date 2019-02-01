@@ -17,6 +17,7 @@ Skip over Dispatch and implement Reducers
 -There will be no data, not previous list of claims to be passed in
 -The first time the Reducer is called, it will receive the value of 'undefined'
 -Default value of first argument with an empty array instead of undefined
+
 eg: Claims History
 //REDUCERS(Departments)
 const claimsHistory = (oldClaims = [], action) => {
@@ -49,4 +50,18 @@ const accounting = (currentMoney = 100, action) => {
    }
 
    return currentMoney
+}
+
+
+eg: Policies
+const policies = (existingPolicies = [], action) => {
+  if (action.type === 'CREATE_POLICY') {
+    return [...existingPolicies, action.payload.name]
+  }
+
+  else if (action.type === 'DELETE_POLICY') {
+    return existingPolicies.filter(name => name !== action.payload)
+  }
+
+  return exitingPolicies
 }
