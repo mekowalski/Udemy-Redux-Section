@@ -16,8 +16,18 @@ const store = createStore(departments)
 
 store; //Represents Redux app, contains all the Reducers and all State/Data produced by Reducers
 
-//first create Action to pass to Dispatch
+-first create Action to pass to Dispatch
 const action = createPolicy('Malind', 30)
 
-//Just like the original Form Receiver, dispatch makes copies and sends to Reducers
+-Just like the original Form Receiver, dispatch makes copies and sends to Reducers
+-When Action is passed to store.dispatch(), the Action will forward to each Reducer
+-Each Reducer function ran and processed that Action(Form)
 store.dispatch(action);
+
+-Function that gets entire Company Data Bank
+store.getState()
+console.log(store.getState()) =>
+> {accounting: 130, claimsHistory: Array(0), policies: Array(1)}
+  accounting: 130
+  >claimsHistory: []
+  >policies: ["Malind"]
