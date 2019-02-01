@@ -1,3 +1,21 @@
 -Class-based Components are used anytime State needs to be used
 -With Redux, component-level State is used much less
 -Instead, State will be generally stored inside Redux
+
+1. How to design Redux side of App
+2. How to organize Project Directory
+3. Where to create Action Creators, Reducers and Actions, etc
+
+
+REACT WITHOUT REDUX
+                        App
+                         |
+                     Song List
+                   Selected Songs
+                         |
+                   ------|------
+                   |           |
+              Song List     Selected
+            onSongSelect      Song
+                   |           |
+              SongList      SongDetail
