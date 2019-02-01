@@ -25,4 +25,21 @@ const deletePolicy = (name) => {
   }
 }
 
+*Almost every Action Creator will look identical to both above
+*Minor variations
+*The complications come from understanding terminology and their purposes
+
+eg: Create Claim
+//also pass in payload
+const createClaim = (name, amountToCollect) => {
+  return {
+    type: CREATE_CLAIM,
+    payload: {
+      name: name,
+      amountToCollect: amountToCollect
+    }
+  }
+}
+
+
 2. Create and Action: JS Object that has a Type and Payload
