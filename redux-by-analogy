@@ -100,3 +100,13 @@ b. Accounting will look at Form and see if it is a Claim
   -No: Accounting will probably look for Forms for creating Policy
     -Yes: That will take the amount of money to sign up for the Policy and return it updated to Data Bank
     -No: If Form is not a Claim or Policy then the Accounting Dept won't care and return it back to Data Bank
+
+
+POLICIES DEPARTMENT
+a. Form Receiver gives the Policies Dept the New Form and the current list of Policies from Data Bank
+b. Policies Dept will look at Type of Form, is it trying to Create or End Policy
+  -No: They won't care about the From and will excuse the original list of Policies
+  -Yes: Whether the Form is to Start or End a Policy
+    -End: Find the Customer name and take it off the Policy list
+    -Start: Add the Customer name and add it to the Policy list
+    -After Policy list is updated it will be returned to the Data Bank
