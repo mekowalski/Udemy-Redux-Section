@@ -14,4 +14,10 @@ const departments = combineReducers({
 
 const store = createStore(departments)
 
-store;
+store; //Represents Redux app, contains all the Reducers and all State/Data produced by Reducers
+
+//first create Action to pass to Dispatch
+const action = createPolicy('Malind', 30)
+
+//Just like the original Form Receiver, dispatch makes copies and sends to Reducers
+store.dispatch(action);
