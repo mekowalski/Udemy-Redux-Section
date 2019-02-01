@@ -61,3 +61,17 @@ MANAGEMENT TEAM: Tell me a list of who has a Policy right now!
 -Now the Management Team can easily access any of the Departments without having to go to each Dept
 -To update the Policies in the Data Bank, Form Receiver will go to both Policies Dept and Data Bank
 -Policies Dept will look at new Form, process it and pass it back to the Data Bank
+
+
+FINISHING THE ANALOGY
+What is going on with the new Form
+-Every Form that is filled out by a Customer has 2 parts(paper with field and field at the bottom)
+-Have different TYPEs of Forms for creating Claim and Policy
+-Type: Declares the purpose of the Form
+-
+
+                  CLAIM
+    FORM   --->     |
+                    |
+                Name: Malind          <---TYPE
+              Claim Amount: $500      <---PAYLOAD
