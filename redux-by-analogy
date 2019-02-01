@@ -20,3 +20,10 @@ CUSTOMER ---> FORM --->  FORM RECEIVER  --->  |
                                               | --->  FORM    Policies
                                               |
                                               | --->  FORM    Accounting
+
+
+
+DEPARTMENTS
+-Claims History: List of all claims ever made
+-Policies: List of who has a policy with the insurance company
+-Accounting: Stores a big bag of cash, the customers pay for this
