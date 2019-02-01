@@ -63,5 +63,11 @@ const policies = (existingPolicies = [], action) => {
     return existingPolicies.filter(name => name !== action.payload)
   }
 
-  return exitingPolicies
+  return existingPolicies
 }
+
+*Do not modify the array that gets passed in as the 1st argument
+*Make sure to return some value
+
+***OVERALL***
+Reducer takes in some Data and and Action, then modify and return that Data based on the action
