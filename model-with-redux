@@ -1,2 +1,18 @@
 1. Create an Action Creator: Function that returns JS object
+  -Create one Action Creator for each Type of Action within the App
+  -Create Policy, Create Claim and Delete Policy
+
+eg: Customers dropping off a Form to Create Policy(Action Creator)
+//pass in payload for custom Policy
+const createPolicy = (name, amount) => {
+  return { //Action: Form in Analogy
+    type: 'CREATE_POLICY',
+    payload: {
+      name: name,
+      amount: amount
+    }
+  }
+}
+
+
 2. Create and Action: JS Object that has a Type and Payload
