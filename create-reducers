@@ -1,0 +1,7 @@
+Dispatch is part of Redux Library, therefore that doesn't have to be written from scratch
+Skip over Dispatch and implement Reducers
+
+-Reducers: write a few function to model a Dept in the Insurance Co
+1. Claims Reducer
+2. Accounting Reducer
+3. Policies Reducer
