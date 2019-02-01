@@ -12,15 +12,21 @@ Skip over Dispatch and implement Reducers
   1. Whatever existing Data from Data Bank belongs to the Dept
   2. Action(Form)
 
+-Reducer is a Function, not knowing what its data is until it is called for the first time
+-Make sure to handle the case when a Reducer is called for the very first time
+-There will be no data, not previous list of claims to be passed in
+-The first time the Reducer is called, it will receive the value of 'undefined'
+-Default value of first argument with an empty array instead of undefined
 eg: Claims History
 //REDUCERS(Departments)
-const claimsHistory = (oldClaims, action) => {
+const claimsHistory = (oldClaims = [], action) => {
   if (action.type === 'CREATE_CLAIM') {
     //we care about this action (Form)
     return [...oldClaims, action.payload]
     //ES15 syntax, takes original array, add it to brand new array then add the new record(action.payload)
   }
   //then we don't care about the action (Form)
+  return oldClaims
 }
 
 //Console
