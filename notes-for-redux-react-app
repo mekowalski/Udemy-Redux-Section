@@ -1,0 +1,7 @@
+-Hard coded list of Songs
+  -Title and Length
+
+-Have a Select button for each Song
+  -When selected, show Details for that Song on one side of the screen
+
+-When a user selects a different Song, show Details for that Song
