@@ -14,3 +14,9 @@ COMBINEREDUCERS CALL
 -Functions need to be wired together
 -Making use of combineReducers wire up the Reducers altogether
 -When using specific key names of the Reducer names, there ends up being a State object
+
+
+DISPATCH
+-Each Dispatch that is called (store.dispatch()) runs a whole Redux Cycle
+-Can still modify the State object after running .dispatch with store.getState()
+-At any point, Store can pull out State and read the current Data for app
