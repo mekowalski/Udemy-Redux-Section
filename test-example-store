@@ -22,12 +22,30 @@ const action = createPolicy('Malind', 30)
 -Just like the original Form Receiver, dispatch makes copies and sends to Reducers
 -When Action is passed to store.dispatch(), the Action will forward to each Reducer
 -Each Reducer function ran and processed that Action(Form)
+-This will incrementally modify how the State of the company looks all contained in the Store
 store.dispatch(action);
+
 
 -Function that gets entire Company Data Bank
 store.getState()
 console.log(store.getState()) =>
-> {accounting: 130, claimsHistory: Array(0), policies: Array(1)}
+>{accounting: 130, claimsHistory: Array(0), policies: Array(1)}
   accounting: 130
   >claimsHistory: []
   >policies: ["Malind"]
+
+
+Create a collection of the Company Data Bank
+eg:
+store.dispatch(createPolicy('Kristopher', 60));
+store.dispatch(createPolicy('Ryan', 66));
+store.dispatch(createPolicy('Christine', 33));
+=>
+>{accounting: 259, claimsHistory: Array(0), policies: Array(3)}
+  accounting: 259
+  >claimsHistory: []
+  >policies: (3) ["Kristopher", "Ryan", "Christine"]
+
+*Three Policies for Kristopher, Ryan and Christine
+*Total amount of 259 (100+60+66+33)
+*No claims yet created/filed
