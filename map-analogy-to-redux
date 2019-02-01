@@ -12,3 +12,19 @@ Action Creator: Starts with Customer dropping a Form off
 
 Action: Form describes how they want to change data within the company including a Type and Payload
   -Plain JS object(Action) that has a Type and Payload property
+  -Describe some change made to the data inside application
+
+Dispatch: Form Receiver made copies of the Form and handed it off to each Dept
+  -Function takes in an action, makes copies of that object and passes it off to a bunch of different
+   places in the application
+
+Reducers: Each Dept has its own set of Data
+  -Function responsible for taking in an Action and some existing amount of Data
+  -Processes that Data then makes changes to the Data
+  -Finally returns Data to be centralized in a location
+
+State: Company Data Bank for Management
+  -Central repository of all updated info that has been created by Reducers
+  -All info is consolidated in the State object so that React App can easily reach into the Redux side and
+   get access to all data of application
+  -This way the React app doesn't have to go around to each separate Reducer to ask for current State
