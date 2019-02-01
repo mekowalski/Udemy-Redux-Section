@@ -8,3 +8,21 @@ REDUX: state management library
 
 *React is all about rendering the display onto the screen and handling user interactions
 *Not really about maintaining/handling data
+
+
+REDUX DIFFICULTY CURVE
+
+Difficulty
+    |
+    |_________    what is this dumb terminology???
+    |         \
+    |          \
+    |           \
+    |            \    ohhh, that's how it fits together!!!
+    |             \
+    |              \
+    |               \
+    |                \____        i can build 'anything'
+    |                     \__________________________
+    |__________________________________________________
+                                                   Time    
