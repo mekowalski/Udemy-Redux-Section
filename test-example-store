@@ -1,0 +1,2 @@
+Now that Action Creators, Actions & Reducers are built, wire them together into a single object name Store
+STORE: collection of different Reducers and Action Creators
