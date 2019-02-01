@@ -14,5 +14,15 @@ const createPolicy = (name, amount) => {
   }
 }
 
+eg: Delete Policy
+//pass in payload for custom policy
+const deletePolicy = (name) => {
+  return {
+    type: DELETE_POLICY,
+    payload: {
+      name: name
+    }
+  }
+}
 
 2. Create and Action: JS Object that has a Type and Payload
