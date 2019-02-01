@@ -2,3 +2,9 @@ INTRODUCTIONS TO REDUX
 REDUX: state management library
 -Same state in class-based components
 -Instead of React taking care of state, extract it to the Redux library
+-Makes creating complex applications a bit easier(not necessary with all React apps but is helpful)
+-Not required to create a React app
+-Not explicitly designed to work with react
+
+*React is all about rendering the display onto the screen and handling user interactions
+*Not really about maintaining/handling data
