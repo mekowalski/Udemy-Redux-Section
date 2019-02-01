@@ -1,3 +1,5 @@
+How to put React and Redux together
+
 -Hard coded list of Songs
   -Title and Length
 
@@ -5,3 +7,11 @@
   -When selected, show Details for that Song on one side of the screen
 
 -When a user selects a different Song, show Details for that Song
+
+
+COMPONENT STRUCTURE
+1. SongList: list of Songs that is an array of objects
+  -Title and Length
+  -Render out the list of Songs
+
+2. SongDetail: Displays the Song Title and Length of given Song
