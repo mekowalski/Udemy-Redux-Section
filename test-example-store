@@ -1,2 +1,17 @@
 Now that Action Creators, Actions & Reducers are built, wire them together into a single object name Store
 STORE: collection of different Reducers and Action Creators
+
+console.log(Redux) =>
+{createStore: ƒ, combineReducers: ƒ, bindActionCreators: ƒ, applyMiddleware: ƒ, compose: ƒ, …}
+
+const { createStore, combineReducers } = Redux
+
+const departments = combineReducers({
+  accounting: accounting,
+  claimsHistory: claimsHistory,
+  policies: policies
+})
+
+const store = createStore(departments)
+
+store;
