@@ -3,3 +3,6 @@ MAP ANALOGY TO REDUX
 Apply world of Insurance Company to all the Redux Cycle
 
 REDUX CYCLE
+Action Creator           ---> Action   ---> Dispatch      ---> Reducers    ---> State
+Person dropping off Form ---> the Form ---> Form Receiver ---> Departments ---> Compiled Dept Data
+INSURANCE COMPANY
