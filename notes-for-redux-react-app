@@ -10,8 +10,20 @@ How to put React and Redux together
 
 
 COMPONENT STRUCTURE
+-React Side
 1. SongList: list of Songs that is an array of objects
   -Title and Length
   -Render out the list of Songs
 
 2. SongDetail: Displays the Song Title and Length of given Song
+
+
+REACT-REDUX
+-Install Redux to the new app
+-Also install React-Redux
+React-Redux: 3rd library to use so that React and Redux can talk to each other
+
+React --->  React-Redux --->  Redux
+      <---   Gets React <---
+            and Redux to
+            work together
