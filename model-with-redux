@@ -1,0 +1,2 @@
+1. Create an Action Creator: Function that returns JS object
+2. Create and Action: JS Object that has a Type and Payload
