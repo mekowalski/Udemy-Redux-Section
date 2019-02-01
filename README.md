@@ -1,3 +1,5 @@
-##Udemy Redux Section
+# Udemy Redux Section
 
-//Kowalski, are you there??
+Notes, thoughts and concerns with Redux from the Udemy React with Redux course
+
+Kowalski, are you there??
