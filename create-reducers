@@ -18,7 +18,7 @@ const claimsHistory = (oldClaims, action) => {
   if (action.type === 'CREATE_CLAIM') {
     //we care about this action (Form)
     return [...oldClaims, action.payload]
-    //ES15 syntax, takes an original array, add it to a brand new array then add the new record(action.payload)
+    //ES15 syntax, takes original array, add it to brand new array then add the new record(action.payload)
   }
   //then we don't care about the action (Form)
 }
@@ -26,3 +26,7 @@ const claimsHistory = (oldClaims, action) => {
 //Console
 const numbers = [1, 2, 3] => undefined
 [...numbers, 4] => (4) [1, 2, 3, 4]
+
+***Anytime a record is changed inside Reducers, always always always, 100% of the time, want to return a
+   new array/object, as oppposed to modifying an existing structure***
+***.push will never be inside a Redcuer as that will MODIFY the existing structure***
