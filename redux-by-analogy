@@ -21,9 +21,19 @@ CUSTOMER ---> FORM --->  FORM RECEIVER  --->  |
                                               |
                                               | --->  FORM    Accounting
 
-
-
 DEPARTMENTS
 -Claims History: List of all claims ever made
 -Policies: List of who has a policy with the insurance company
 -Accounting: Stores a big bag of cash, the customers pay for this
+
+
+WHAT HAPPENS WHEN A NEW CUSTOMER WANTS TO SIGN UP FOR A NEW POLICY
+Policy is a contract that covers the customer
+a. Customer fills out a form for a Policy
+b. Customer goes to Insurance Company HQ
+c. They won't just go to one of the Departments to hand in the form
+d. Customer has to take it to a front office/counter and give it to the Form Receiver
+e. Form Receiver makes a copy of the Form
+f. Then those copies will be handed off to each department inside the HQ
+
+*The purpose of the first Form is to sign up for a new Policy
