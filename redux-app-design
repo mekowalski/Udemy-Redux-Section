@@ -19,3 +19,13 @@ REACT WITHOUT REDUX
             onSongSelect      Song
                    |           |
               SongList      SongDetail
+
+
+REACT WITH REDUX
+
+      REDUCERS
+  Song list reducer
+Selected song reducer
+
+  ACTION CREATORS
+   Select Song
