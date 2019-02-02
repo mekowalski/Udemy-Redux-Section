@@ -1,1 +1,14 @@
 HOW DOES REACT AND REDUX FIT TOGETHER
+
+            STORE
+          Reducers
+      Song list reducer     --------->    Provider
+    Selected song reducer                     |
+                                              |
+                                             App
+                                              |
+                                              |
+      ACTION CREATORS                      Connect  <---  Communicates with Provider
+       Select Song                            |
+                                              |
+                                          SongList
