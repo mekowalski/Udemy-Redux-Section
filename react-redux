@@ -21,4 +21,9 @@ HOW DOES REACT AND REDUX FIT TOGETHER
 
 -Store Contains the Reducers and State of application
 -Store will be passed as a prop to the Provider
+
 -Provider is rendered at the top of the app hierarchy
+  -The App will be shown inside the Provider
+-Provider also will have reference to the Store
+  -Essentially provides information to different parts of the application
+-After provider is wired up, need to somehow access the Data inside the Store
