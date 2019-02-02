@@ -34,3 +34,10 @@ Selected song reducer                 ------ | ------
 -Instead all the ideas of song creation, selection and current selection is in the Redux of app
 -Reducers
 1. A reducer for a list of songs
+  -This will pass in a static array of songs
+  -Maintain it through the reducer(this is not ideal but just practice)
+2. A reducer to record currently selected song
+
+-Action Creators
+1. Select song that will dispatch an action, tell the reducer to update data and reflect the new, current
+   picked song
