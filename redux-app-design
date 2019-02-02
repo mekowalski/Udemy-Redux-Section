@@ -29,3 +29,8 @@ Selected song reducer                 ------ | ------
                                       |             |
   ACTION CREATORS                 SongList       SongDetail
    Select Song
+
+-App will pass very little information down to the Child Components
+-Instead all the ideas of song creation, selection and current selection is in the Redux of app
+-Reducers
+1. A reducer for a list of songs
