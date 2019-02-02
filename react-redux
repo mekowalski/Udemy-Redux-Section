@@ -12,3 +12,13 @@ HOW DOES REACT AND REDUX FIT TOGETHER
        Select Song                            |
                                               |
                                           SongList
+
+*high-level overview*
+
+1. Using React-Redux, create 2 new components(Provider and Connect)
+2. Both components created by React-Redux, that I will create instances of
+3. Pass some Props into both to configure how they work
+
+-Store Contains the Reducers and State of application
+-Store will be passed as a prop to the Provider
+-Provider is rendered at the top of the app hierarchy
