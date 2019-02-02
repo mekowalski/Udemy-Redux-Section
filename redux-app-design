@@ -41,3 +41,6 @@ Selected song reducer                 ------ | ------
 -Action Creators
 1. Select song that will dispatch an action, tell the reducer to update data and reflect the new, current
    picked song
+
+-How to get the State created from the Reducers
+-How to get Action Creator to be called by SongList(consumed)
