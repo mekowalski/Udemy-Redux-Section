@@ -23,9 +23,9 @@ REACT WITHOUT REDUX
 
 REACT WITH REDUX
 
-      REDUCERS
-  Song list reducer
-Selected song reducer
-
-  ACTION CREATORS
+      REDUCERS                              APP
+  Song list reducer                          |
+Selected song reducer                 ------ | ------
+                                      |             |
+  ACTION CREATORS                 SongList       SongDetail
    Select Song
