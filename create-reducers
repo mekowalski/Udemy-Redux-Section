@@ -68,6 +68,7 @@ const policies = (existingPolicies = [], action) => {
 
 *Do not modify the array that gets passed in as the 1st argument
 *Make sure to return some value
+*filter produces a new array that has filtered values inside of it
 
 ***OVERALL***
-Reducer takes in some Data and and Action, then modify and return that Data based on the action
+Reducer takes in some Data and an Action, then modify and return that Data based on the action
