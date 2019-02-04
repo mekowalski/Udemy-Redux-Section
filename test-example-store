@@ -1,5 +1,8 @@
 Now that Action Creators, Actions & Reducers are built, wire them together into a single object name Store
 STORE: collection of different Reducers and Action Creators
+-The previously create Reducers and Action Creators have NOT referenced the Redux library whatsoever
+-The vast amount of written Redux code is going to be normal code with normal functions, arrays & objects
+-Only at small, specific points will Redux even be referenced directly
 
 console.log(Redux) =>
 {createStore: ƒ, combineReducers: ƒ, bindActionCreators: ƒ, applyMiddleware: ƒ, compose: ƒ, …}
