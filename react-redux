@@ -32,3 +32,8 @@ HOW DOES REACT AND REDUX FIT TOGETHER
   -Not communicated through Props system but through the Context system
   -Context system allows communication directly from Parent component to Child component even if other
    components are between them(such as App)
+-Connect sends message up to Provider, asking for Data from Store, Provider will then return the current
+ Data
+-Connect then takes that current Data and pass it as a Prop down to the SongList component
+-Action Creators are NOT stored in the Store, instead call the Action Creator, take the Action returned
+ and send it to store.dispatch()
