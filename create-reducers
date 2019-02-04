@@ -60,15 +60,16 @@ const policies = (existingPolicies = [], action) => {
   }
 
   else if (action.type === 'DELETE_POLICY') {
-    return existingPolicies.filter(name => name !== action.payload)
+    return existingPolicies.filter(name => name !== action.payload.name)
   }
 
   return existingPolicies
 }
 
+*filter produces a new array that has filtered values inside of it
 *Do not modify the array that gets passed in as the 1st argument
 *Make sure to return some value
-*filter produces a new array that has filtered values inside of it
 
 ***OVERALL***
 Reducer takes in some Data and an Action, then modify and return that Data based on the action
+*Use the reducers and action creators to create a new instance of a Redux Store
