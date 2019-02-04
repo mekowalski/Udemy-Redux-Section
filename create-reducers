@@ -35,8 +35,8 @@ const numbers = [1, 2, 3] => undefined
 [...numbers, 4] => (4) [1, 2, 3, 4]
 
 ***Anytime a record is changed inside Reducers, always always always, 100% of the time, want to return a
-   new array/object, as oppposed to modifying an existing structure***
-***.push will never be inside a Redcuer as that will MODIFY the existing structure***
+   new array/object, as opposed to modifying an existing structure***
+***.push will never be inside a Reducer as that will MODIFY the existing structure***
 
 
 eg: Accounting
@@ -46,7 +46,7 @@ const accounting = (currentMoney = 100, action) => {
    }
 
    else if (action.type === 'CREATE_POLICY') {
-     return currenMoney + action.paylod.amount
+     return currentMoney + action.payload.amount
    }
 
    return currentMoney
