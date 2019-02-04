@@ -1,0 +1,4 @@
+-Export the Action Creator
+-'export default' statement has been the primary way to export
+-When multiple Action Creators are written  within a file, multiple functions may need to be exported
+-Rather than create a `default export`, create a `named` export
