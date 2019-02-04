@@ -27,3 +27,8 @@ HOW DOES REACT AND REDUX FIT TOGETHER
 -Provider also will have reference to the Store
   -Essentially provides information to different parts of the application
 -After provider is wired up, need to somehow access the Data inside the Store
+-Connect will wrap SongList component
+  -It communicates with Provider tag at the hierarchy
+  -Not communicated through Props system but through the Context system
+  -Context system allows communication directly from Parent component to Child component even if other
+   components are between them(such as App)
