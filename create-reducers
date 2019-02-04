@@ -23,7 +23,7 @@ eg: Claims History
 const claimsHistory = (oldClaims = [], action) => { //(current, existing Data = [Data Bank], action)
   if (action.type === 'CREATE_CLAIM') {
     //we care about this action (Form)
-    return [...oldClaims, action.payload]
+    return [...oldClaims, action.payload] //payload for CREATE_CLAIM: name & amountToCollect
     //ES15 syntax, takes original array, add it to brand new array then add the new record(action.payload)
   }
   //then we don't care about the action (Form)
