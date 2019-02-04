@@ -29,6 +29,7 @@ const deletePolicy = (name) => {
 
 *Almost every Action Creator will look identical to both above
 *Minor variations
+*The code with writing Redux isn't syntactically complicated(both action creators have the same elements)
 *The complications come from understanding terminology and their purposes
 
 eg: Create Claim
