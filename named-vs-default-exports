@@ -2,3 +2,12 @@
 -'export default' statement has been the primary way to export
 -When multiple Action Creators are written  within a file, multiple functions may need to be exported
 -Rather than create a `default export`, create a `named` export
+
+Named Export: allows export of many functions from a single file
+
+-How to import the Action Creator to another file
+eg: import { selectSong } from '../actions'
+-{}: means that I want to specifically import a Named export from Action Creator
+-How to determine the import statement in App.js
+  -If it's named export, use {}
+  -If it's export default, do not use {}
