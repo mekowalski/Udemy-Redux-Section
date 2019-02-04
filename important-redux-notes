@@ -14,6 +14,7 @@ COMBINEREDUCERS CALL
 -Functions need to be wired together
 -Making use of combineReducers wire up the Reducers altogether
 -When using specific key names of the Reducer names, there ends up being a State object
+-Convention to name the keys and reducers to the same names
 
 
 DISPATCH
@@ -21,7 +22,7 @@ DISPATCH
 -Can still modify the State object after running .dispatch with store.getState()
 -At any point, Store can pull out State and read the current Data for app
 -Only modify State object through use of Dispatch functions, Action Creators and Actions
--NO way to reach into Store and modify State manually
+-NO way to reach into Store and modify State manually(NO DIRECT ACCESS TO STORE)
 eg: store.state.accounting - 30 (NOT GOING TO HAPPEN)
 
 
