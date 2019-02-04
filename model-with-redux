@@ -20,7 +20,7 @@ eg: Delete Policy
 //pass in payload for custom policy
 const deletePolicy = (name) => {
   return {
-    type: DELETE_POLICY,
+    type: 'DELETE_POLICY',
     payload: {
       name: name
     }
@@ -36,7 +36,7 @@ eg: Create Claim
 //also pass in payload
 const createClaim = (name, amountToCollect) => {
   return {
-    type: CREATE_CLAIM,
+    type: 'CREATE_CLAIM',
     payload: {
       name: name,
       amountToCollect: amountToCollect
