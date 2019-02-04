@@ -35,5 +35,6 @@ HOW DOES REACT AND REDUX FIT TOGETHER
 -Connect sends message up to Provider, asking for Data from Store, Provider will then return the current
  Data
 -Connect then takes that current Data and pass it as a Prop down to the SongList component
+-Connect will make sure Data of both State and Action Creators show up in the Component as Props
 -Action Creators are NOT stored in the Store, instead call the Action Creator, take the Action returned
  and send it to store.dispatch()
