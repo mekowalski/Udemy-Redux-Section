@@ -30,3 +30,5 @@ Difficulty
 *eventually understand terminology and flow
 *redux becomes more comprehensible
 *it will get much easier, STICK WITH IT
+
+*Redux is NOT explicitly designed for React, it can be used with other languages 
