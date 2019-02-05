@@ -2,4 +2,6 @@ CONNECT
 -Connect communicates with Provider to retrieve data from the store
 -Through the Context system, a Parent Component is able to directly communicate with a Child component
 1. Connect will ask Provider for Data from the Store
-2.
+2. Provider will return the current Data
+3. Connect takes the Data and passes it as a Prop to the respective Component(that needs the Data)
+4. Connect will show Data of both State and Action Creators in the component as Props
