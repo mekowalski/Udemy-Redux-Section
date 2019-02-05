@@ -12,5 +12,12 @@ REDUX IS NOT MAGIC
 
 -To make sure an Action makes its way to the Reducers, NEED to call the dispatch function
 -This will return an Action object, directly passed to the store.dispatch function
-
 eg: store.dispatch(createPolicy('Kristopher', 60));
+
+-None of these function calls will update the Redux Store
+-They return Actions but they never got sent to Redux and never ended up inside the Reducers
+createPolicy('Kristopher', 60)
+createClaim('Kristopher', 45)
+deletePolicy('Kristopher')
+
+***In order for an Action Creator to update the State, take the returned Action and send it to dispatch()***
