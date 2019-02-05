@@ -1,3 +1,9 @@
 Why go through extra work of passing it to connect() instead of calling it in the Component
 
 REDUX IS NOT MAGIC
+-Redux does NOT automatically detect action creators being called
+-Redux does NOT automatically detect a function returning an object that is an 'action'
+
+-The Action Creator does not wire itself to Redux, it doesn't register with Redux
+-When the Action Creator is imported within the Component, what is imported is a regular, plain JS function
+-Action Creator can be called inside the Component but it will be treated as a normal JS function call
