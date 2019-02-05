@@ -20,4 +20,14 @@ createPolicy('Kristopher', 60)
 createClaim('Kristopher', 45)
 deletePolicy('Kristopher')
 
-***In order for an Action Creator to update the State, take the returned Action and send it to dispatch()***
+***In order for an Action Creator to update the State, take the returned Action & send it to dispatch()***
+
+
+HOW CONNECT WORKS WITH ACTION CREATOR
+1. When Action Creator is passed to the connect()
+2. connect() does a special operation inside the object
+3. It looks at all the functions included in the object and wraps it inside another JS function
+4. When that new JS function is called
+5. connect() automatically calls the Action Creators
+6. connect() automatically takes that Action that is returned
+7. connect() automatically calls the dispatch()
