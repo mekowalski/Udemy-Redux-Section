@@ -72,3 +72,12 @@ eg:
 const mapStateToProps = (state) => {
   return { songs: state.songs }
 }
+
+
+OVERALL
+-How to make use of React-Redux Library to get Data from Redux Store into a Component
+1. Always import connect at the top of the respective Component
+2. Always call connect() and pass it the Component as the 2nd function call
+3. Always define mapStateToProps()
+4. mapStateToProps() is Always going to get a first argument of state
+5. Always going to return an object that will show as Props inside the respective Component
