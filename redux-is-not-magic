@@ -7,3 +7,10 @@ REDUX IS NOT MAGIC
 -The Action Creator does not wire itself to Redux, it doesn't register with Redux
 -When the Action Creator is imported within the Component, what is imported is a regular, plain JS function
 -Action Creator can be called inside the Component but it will be treated as a normal JS function call
+-That JS function will return an object that will not magically get forwarded to Redux
+-Redux does NOT detect that a function is arbitrarily being called an Action Creator
+
+-To make sure an Action makes its way to the Reducers, NEED to call the dispatch function
+-This will return an Action object, directly passed to the store.dispatch function
+
+eg: store.dispatch(createPolicy('Kristopher', 60));
