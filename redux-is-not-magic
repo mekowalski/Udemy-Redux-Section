@@ -24,6 +24,7 @@ deletePolicy('Kristopher')
 
 
 HOW CONNECT WORKS WITH ACTION CREATOR
+*All behind the scenes*
 1. When Action Creator is passed to the connect()
 2. connect() does a special operation inside the object
 3. It looks at all the functions included in the object and wraps it inside another JS function
@@ -31,3 +32,5 @@ HOW CONNECT WORKS WITH ACTION CREATOR
 5. connect() automatically calls the Action Creators
 6. connect() automatically takes that Action that is returned
 7. connect() automatically calls the dispatch()
+
+***Any time an Action Creator is called from a Component, always pass it to the connect()***
