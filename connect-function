@@ -5,3 +5,22 @@ CONNECT
 2. Provider will return the current Data
 3. Connect takes the Data and passes it as a Prop to the respective Component(that needs the Data)
 4. Connect will show Data of both State and Action Creators in the component as Props
+
+eg: a Component
+import React from 'react';
+import { connect } from 'react-redux';
+
+class ThisComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        This is a Component
+      </div>
+    );
+  }
+}
+
+export default connect()(ThisComponent)
+
+*connect(): returns a function
+*(ThisComponent): invokes the function
