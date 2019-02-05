@@ -40,7 +40,6 @@ const mapStateToProps = () => {
 
 }
 
-
 STATE
 *called with all the State inside the Redux Store
 *contains all the reducers and Data
@@ -56,3 +55,20 @@ CONNECT CONFIGURATION
 *this is how to configure connect() component, configure by passing connect() a function
 eg:
 export default connect(mapStateToProps)(ThisComponent)
+
+CONSOLE.LOG(STATE)
+-Return
+{songs: Array(3), selectedSong: null}
+  selectedSong: null
+  songs: Array(3)
+    0: {title: "Winning Streak", duration: "3:19"}
+    1: {title: "Blowback", duration: "4:05"}
+    2: {title: "Belong To You", duration: "3:07"}
+
+
+-Now return an object with a KEY of songs: and its value is state.songs
+-Object returned will be the Props inside SongList Component
+eg:
+const mapStateToProps = (state) => {
+  return { songs: state.songs }
+}
