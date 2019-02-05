@@ -31,3 +31,12 @@ CONFIGURE CONNECT CALL WITH MAPSTATETOPROPS
 -Get info from Store via the Provider
 -Any time the Data in the Store changes, the Provider will automatically notify Connect function
 -This also will ensure that the respective Component has the current/updated Data from Connect
+
+eg:
+const mapStateToProps = () => {
+
+}
+
+*take State object, all the Data in Store
+*run a calculation on it to show it up as Props inside Component
+*can be named any thing ie: getMyState but convention is this name
