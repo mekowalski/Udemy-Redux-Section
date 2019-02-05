@@ -1,1 +1,4 @@
 -Data sourced form the Redux Store
+-Map over this.props.songs array, which contains all the songs
+-Return some JSX that represents song on the list
+-Wire up the Select button later
