@@ -1,0 +1,5 @@
+CONNECT
+-Connect communicates with Provider to retrieve data from the store
+-Through the Context system, a Parent Component is able to directly communicate with a Child component
+1. Connect will ask Provider for Data from the Store
+2.
