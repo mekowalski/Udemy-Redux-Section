@@ -26,9 +26,8 @@ export const deletePolicy = (name) => {
 }
 
 
-
 -How to import the Action Creator to another file
-eg: import { selectSong } from '../actions'
+eg: import { createPolicy, deletePolicy } from '../actions'
 -{}: means that I want to specifically import a Named export from Action Creator
 -How to determine the import statement in App.js
   -If it's named export, use {}
