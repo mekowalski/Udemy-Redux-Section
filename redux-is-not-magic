@@ -21,7 +21,7 @@ createClaim('Kristopher', 45)
 deletePolicy('Kristopher')
 
 ***In order for an Action Creator to update the State, take the returned Action & send it to dispatch()***
-
+***There is NO reference to the .dispatch() inside the Component***
 
 HOW CONNECT WORKS WITH ACTION CREATOR
 *All behind the scenes*
