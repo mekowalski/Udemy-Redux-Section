@@ -4,6 +4,28 @@
 -Rather than create a `default export`, create a `named` export
 
 Named Export: allows export of many functions from a single file
+eg: action/index.js
+export const createPolicy = (name, amount) => {
+  return { //Action: Form in Analogy
+    type: 'CREATE_POLICY',
+    payload: {
+      name: name,
+      amount: amount
+    }
+  }
+}
+
+//Delete Policy
+export const deletePolicy = (name) => {
+  return {
+    type: 'DELETE_POLICY',
+    payload: {
+      name: name
+    }
+  }
+}
+
+
 
 -How to import the Action Creator to another file
 eg: import { selectSong } from '../actions'
