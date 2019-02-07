@@ -26,4 +26,11 @@ componentDidMount() {
                                                     };
                                                   }
 
-- PostList Component lifecycle method, anytime it's invoked, it calls this.props.fetchPosts()
+What may seem to bee occurring
+-PostList Component lifecycle method, anytime it's invoked, it calls this.props.fetchPosts()
+-Probably behind the scenes, dispatch is being called
+  -everytime an action creator is called, it returns an action which is sent to dispatch on redux Store
+-React-Redux is probably calling the action creator function of fetchPosts()
+-React-Redux probably calls the fetchPosts() function
+-A request is made from within, and then waiting occurs
+-Then an object is returned
