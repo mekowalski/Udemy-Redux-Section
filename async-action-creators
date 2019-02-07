@@ -42,3 +42,12 @@ What is ACTUALLY happening
 -Action creator gets called and invoked
 -Then at some point in time, come across 'return jsonPlaceholder.get('/posts')' THE REQUEST OBJECT
 -Not the ACTION OBJECT 'return { type: 'FETCH_POSTS', payload: response }'
+
+OVERALL
+-Request object is returned from action creator
+-Which goes into store.dispatch()
+-Then Redux Store looks at what's returned & wonders 'is this a plain JS object with only a type property'
+-NO, because a Request object was returned, not an Action
+-Therefore the error arises:
+  Error: Actions must be plain objects. Use custom middleware for async actions.
+-ACTIONS MUST BE PLAIN OBJECTS
