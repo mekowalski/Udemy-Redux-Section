@@ -1,3 +1,11 @@
 More practice on React and Redux together
 
 -This app is going to be a bit plain because there will be complex Redux topics
+
+APP GOALS
+1. Absolutely understand purpose of Reducers
+  -Crystal clear understanding and what it really does
+2. Absolutely understand making API requests with Redux
+  -Reach to some external API, get data, return it to Redux app and work with it
+3. Absolutely understand the purpose of redux-thunk
+  -Middleware introduction
