@@ -5,3 +5,15 @@ What's wrong with fetchPosts?
 *this is currently not happening*
 
 -By the time the action gets to a reducer, data won't have been fetched
+
+
+WHAT HAPPENS WHEN APP RUNS(currently)
+
+PostList
+componentDidMount() {
+  this.props.fetchPosts()
+}           ------------>   Probably happening
+                              in React-Redux
+                            store.dispatch(
+                              fetchPosts()
+                            )     ------------>     actions/index.js
