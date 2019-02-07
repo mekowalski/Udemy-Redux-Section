@@ -19,4 +19,9 @@ APP GOALS
 
 COMPONENT STRUCTURE
 -React Side
-1. PostList
+1. PostList: list of Blog Posts
+  -Title and Body
+  -Render out the entire list of BlogPosts
+
+2. AuthorHeader: separate from post
+  -Author Name
