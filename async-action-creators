@@ -1,0 +1,7 @@
+Understanding Async Action Creators
+
+What's wrong with fetchPosts?
+-Action creators must return plain JS objects with a type property
+*this is currently not happening*
+
+-By the time the action gets to a reducer, data won't have been fetched
