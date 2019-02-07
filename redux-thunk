@@ -1,0 +1,5 @@
+REDUX-THUNK: Middleware to help make requests in a Redux application
+-Middleware refers to the Redux library
+-Functions that slightly change the behavior of Store
+-Add in new capabilities/features to Redux side
+-Middleware is always used in Redux library(redux-thunk is prominent)
