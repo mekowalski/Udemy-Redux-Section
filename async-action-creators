@@ -34,3 +34,11 @@ What may seem to bee occurring
 -React-Redux probably calls the fetchPosts() function
 -A request is made from within, and then waiting occurs
 -Then an object is returned
+
+
+What is ACTUALLY happening
+-componentDidMount gets called which calls fetchPosts
+-That then calls an imaginary code inside React-Redux library(store.dispatch())
+-Action creator gets called and invoked
+-Then at some point in time, come across 'return jsonPlaceholder.get('/posts')' THE REQUEST OBJECT
+-Not the ACTION OBJECT 'return { type: 'FETCH_POSTS', payload: response }'
