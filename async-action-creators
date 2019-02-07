@@ -1,10 +1,10 @@
 Understanding Async Action Creators
 
 What's wrong with fetchPosts?
--Action creators must return plain JS objects with a type property
+Issue 1: Action creators must return plain JS objects with a type property
 *this is currently not happening*
 
--By the time the action gets to a reducer, data won't have been fetched
+Issue 2: By the time the action gets to a reducer, data won't have been fetched
 
 
 WHAT HAPPENS WHEN APP RUNS(currently)
@@ -26,7 +26,8 @@ componentDidMount() {
                                                     };
                                                   }
 
-What may seem to bee occurring
+ISSUE NUMBER ONE - ASYNC AWAIT
+What may seem to be occurring
 -PostList Component lifecycle method, anytime it's invoked, it calls this.props.fetchPosts()
 -Probably behind the scenes, dispatch is being called
   -everytime an action creator is called, it returns an action which is sent to dispatch on redux Store
@@ -34,7 +35,6 @@ What may seem to bee occurring
 -React-Redux probably calls the fetchPosts() function
 -A request is made from within, and then waiting occurs
 -Then an object is returned
-
 
 What is ACTUALLY happening
 -componentDidMount gets called which calls fetchPosts
@@ -51,3 +51,11 @@ OVERALL
 -Therefore the error arises:
   Error: Actions must be plain objects. Use custom middleware for async actions.
 -ACTIONS MUST BE PLAIN OBJECTS
+
+
+ISSUE NUMBER TWO - DATA ISN'T RETRIEVED FROM API
+      Actions get consumed in fractions of a second
+     | <-----------------------------------------> |
+    Action ---> Action ---> dispatch ---> Reducers ---> State
+    Creator
+*super fast, instantaneously*
