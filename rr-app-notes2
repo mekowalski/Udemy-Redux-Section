@@ -1,4 +1,5 @@
 More practice on React and Redux together
+redux-react-blog-app
 
 -This app is going to be a bit plain because there will be complex Redux topics
 
@@ -9,3 +10,13 @@ APP GOALS
   -Reach to some external API, get data, return it to Redux app and work with it
 3. Absolutely understand the purpose of redux-thunk
   -Middleware introduction
+
+-Render list of blog post fetched from external API
+-Series of blog elements
+  -Title, Body and Author Name
+  -An icon
+
+
+COMPONENT STRUCTURE
+-React Side
+1. PostList
