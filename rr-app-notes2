@@ -23,5 +23,15 @@ COMPONENT STRUCTURE
   -Title and Body
   -Render out the entire list of BlogPosts
 
-2. AuthorHeader: separate from post
+2. UserHeader: separate from post
   -Author Name
+
+
+EXTERNAL API
+MyApp <---> Axios
+-JSONPlaceholder API
+  -Fake data to freely request
+  -stand in source for making APIs work
+-2 separate endpoints to make requests to:
+  1. /posts
+  2. /users
