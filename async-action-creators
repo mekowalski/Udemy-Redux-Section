@@ -54,8 +54,23 @@ OVERALL
 
 
 ISSUE NUMBER TWO - DATA ISN'T RETRIEVED FROM API
-      Actions get consumed in fractions of a second
-     | <-----------------------------------------> |
+     Actions get consumed in fractions of a second
+     |<----------------------------------------->|
     Action ---> Action ---> dispatch ---> Reducers ---> State
     Creator
 *super fast, instantaneously*
+*issue with this is an asynchronous request is being made here
+
+What is happening
+Time| Action creator called                       Request made to
+    | Action returned                              Typeicode API
+    | Action sent to all Reducers                        |
+    | Reducers run                                       |
+    | *Data NOT Here!*                                   |
+    |                                                    |
+    |                                                    |
+    |                                                    |
+    |                                                    |
+    |                                                    |
+    |                                                    |
+    |                                              Get a response
