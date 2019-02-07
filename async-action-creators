@@ -17,3 +17,13 @@ componentDidMount() {
                             store.dispatch(
                               fetchPosts()
                             )     ------------>     actions/index.js
+                                                  export const fetchPosts = async () => {
+                                                    const response = await jsonPlaceholder.get('/posts');
+
+                                                    return {
+                                                      type: 'FETCH_POSTS',
+                                                      payload: response
+                                                    };
+                                                  }
+
+- PostList Component lifecycle method, anytime it's invoked, it calls this.props.fetchPosts()
