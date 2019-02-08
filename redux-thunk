@@ -8,4 +8,16 @@ REDUX-THUNK: Middleware to help make requests in a Redux application
 MIDDLEWARES IN REDUX
 -Now adventuring into the world of asynchronous action creators
 Synchronous Action Creator: Instantly returns an action with data ready to go
-Asynchronous Action Creator: Takse some amount of time for it to get its data ready to go
+Asynchronous Action Creator: Takes some amount of time for it to get its data ready to go
+  -Any time an action creator tat makes a network request, it will always qualify as asynchronous action
+   creator
+
+-To have asynchronous action creators in Redux, need to install middleware to allow this activity
+
+Middleware:
+
+REDUX CYCLE(current)
+Action Creator  --->  Action  --->  Dispatch  --->  Reducers  --->  State
+
+REDUX CYCLE with REDUX
+Action Creator  --->  Action  --->  Dispatch  --->  Middleware  --->  Reducers  --->  State
