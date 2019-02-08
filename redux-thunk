@@ -57,4 +57,12 @@ b. Pass that 'Something' to dispatch() ---> Will send to Middleware
 c. 'Something' will be inside Redux-Thunk
 d. Action, are you a function or an object
   ---> Object will be passed to the Reducers
-  ---> Function will be invoked by Redux-Thunk, passes it into dispatch & getState functions as arguments
+  ---> Function will be invoked with dispatch, passes dispatch & getState functions as arguments
+e. Wait for request to finish
+f. Request completed ---> Use dispatch() to manually dispatch an Action(entire key part)
+g. New Action is created(dispatching manually from redux-thunk or inside that function, it will always be
+   a plain object
+h. New Action will flow back to dispatch(step b)
+i. New Action is an object that will be inside Redux-Thunk(step c)
+j. Redux-Thunk will again evaluate a function or object(step d)
+k. Finally will be determined an object and passed on to Reducers
