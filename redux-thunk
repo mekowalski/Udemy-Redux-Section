@@ -17,6 +17,13 @@ Asynchronous Action Creator: Takes some amount of time for it to get its data re
 
 MIDDLEWARE
 -Plain JS function that gets called with every single Action dispatched
+-Has the ability to STOP, MODIFY, otherwise mess around with Actions
+  eg: create middleware that console logs every Action that is dispatched
+-Open Source middleware exist
+  -Can access or very easily customize middlewares
+-Most popular use of middleware is for dealing with async Actions
+-Redux-Thunk will help solve current async issue
+
 
 REDUX CYCLE(current)
 Action Creator  --->  Action  --->  Dispatch  --->  Reducers  --->  State
