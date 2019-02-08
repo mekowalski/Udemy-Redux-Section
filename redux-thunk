@@ -66,3 +66,9 @@ h. New Action will flow back to dispatch(step b)
 i. New Action is an object that will be inside Redux-Thunk(step c)
 j. Redux-Thunk will again evaluate a function or object(step d)
 k. Finally will be determined an object and passed on to Reducers
+
+
+SOURCE CODE
+github.com/reduxjs/redux-thunk
+-A total of 14 lines comprise redux-thunk
+-And about 6 of those lines, do anything
