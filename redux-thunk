@@ -49,3 +49,12 @@ Rules with Redux-Thunk
 2. Action Creators CAN return functions
 -If an Action object gets returned, it must have a type
 -If an Action object gets returned, it can optionally have a 'payload'
+
+
+FLOW OF INTERNAL PROCESS OF REDUX-THUNK
+a. Action Creator ---> Action(return 'Something') = Object or Function
+b. Pass that 'Something' to dispatch() ---> Will send to Middleware
+c. 'Something' will be inside Redux-Thunk
+d. Action, are you a function or an object
+  ---> Object will be passed to the Reducers
+  ---> Function will be invoked by Redux-Thunk, passes it into dispatch & getState functions as arguments
