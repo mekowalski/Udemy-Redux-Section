@@ -34,3 +34,18 @@ Action Creator  --->  Action  --->  Dispatch  --->  Middleware  --->  Reducers  
  middlewares inside Redux app
 
 -Can have as many or as few middlewares, current app will have 1 or 2
+
+
+REDUX-THUNK BEHIND THE SCENES
+Normal Rules
+-Action Creators MUST return objects
+-Actions must have a type property
+-Actions can optionally have a 'payload'
+
+Rules with Redux-Thunk
+-Action Creators MUST return objects
+1. Action Creators CAN return Action ojbects
+                        OR
+2. Action Creators CAN return functions
+-If an Action object gets returned, it must have a type
+-If an Action object gets returned, it can optionally have a 'payload'
