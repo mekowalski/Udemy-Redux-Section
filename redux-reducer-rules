@@ -1,0 +1,3 @@
+-In previous application, all the reducers were created in a single reducers/index.js file
+
+-This time, create a separate file for each Reducer needed
