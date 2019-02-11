@@ -13,3 +13,10 @@ eg:
 a. Action Creator will fetch the post
 b. An Action will be dispatched with type: FETCH_POSTS and response on payload proertys
 c. Create a postsReducer to watch for actions of FETCH_POSTS, pull off response & add it into an array
+
+
+RULES OF REDUCERS
+-Must return ANY value other than 'undefined'
+-Produces 'state' or data to be used inside the app using only previous state & action(reducers are pure)
+-Must NOT return reach 'out of itself' to decide what value to return
+-Must NOT mutate its input 'state' argument
