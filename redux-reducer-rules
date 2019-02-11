@@ -11,12 +11,25 @@ eg:
                                                   postsReducer: Maintain array of all fetched posts
 
 a. Action Creator will fetch the post
-b. An Action will be dispatched with type: FETCH_POSTS and response on payload proertys
+b. An Action will be dispatched with type: FETCH_POSTS and response on payload property
 c. Create a postsReducer to watch for actions of FETCH_POSTS, pull off response & add it into an array
 
 
 RULES OF REDUCERS
 -Must return ANY value other than 'undefined'
--Produces 'state' or data to be used inside the app using only previous state & action(reducers are pure)
--Must NOT return reach 'out of itself' to decide what value to return
+eg: undefined will bring error message, should always have Return statement with Value
+-Produces 'state' or data to be used inside the app using only previous state & action
+eg: First time a reducer is called
+  undefined           Action #1
+      |_________|_________|
+                |
+             Reducer
+                |
+            State v1
+
+  *When Redux app is first ran, each Reducer is automatically called one time(automatic invocation)
+  *It will receive 2 arguments of undefined and an Action object
+  *Reducer will take both arguments and return some state value
+
+-Must NOT return reach 'out of itself' to decide what value to return(reducers are pure)
 -Must NOT mutate its input 'state' argument
