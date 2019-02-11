@@ -1,3 +1,15 @@
 -In previous application, all the reducers were created in a single reducers/index.js file
 
 -This time, create a separate file for each Reducer needed
+-As projects are larger, separating the reducers will help clarify purpose
+eg:
+  Action Creators
+    fetchPosts    --->    Action
+                      type: 'FETCH_POSTS'
+                      payload: response     --->    Store
+                                                  Reducers
+                                                  postsReducer: Maintain array of all fetched posts
+
+a. Action Creator will fetch the post
+b. An Action will be dispatched with type: FETCH_POSTS and response on payload proertys
+c. Create a postsReducer to watch for actions of FETCH_POSTS, pull off response & add it into an array
