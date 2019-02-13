@@ -1,1 +1,10 @@
 EQUALITY OF ARRAYS AND OBJECTS
+
+Arrays
+const numbers = [3, 6, 9]
+
+-In JS, easily compare equality between 2 values with ===
+3 === 3 => true
+'hey' === 'hey' => true
+3 !== 1 => true
+3 !== 3 => false (because 3 is equal to 3)
