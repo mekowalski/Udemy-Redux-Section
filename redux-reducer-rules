@@ -74,3 +74,11 @@ eg: Reducer called with Action and previous State value
   }
 
 -Must NOT mutate its input 'state' argument
+  1. First argument in reducer is State, because it's the piece of state the reducer manages
+  2. Extremely misleading and possibly wrong
+  3. Mutate in the JS context eg:
+  const colors = ['yellow', 'green']
+  colors.length => 2
+  colors.push('white') => 3
+  colors => (3) ["yellow", "green", "white"]
+  ***change content of array by adding, removing or changing the item in array
