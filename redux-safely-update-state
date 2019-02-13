@@ -2,12 +2,20 @@
 changed
 
 Syntax for working with Arrays and Objects without mutating State
-                  BAD                             GOOD
+                    BAD                             GOOD
 ARRAY
 -Removing array
- element          state.pop()                     state.filter(element => element !=='hey')
+ element            state.pop()                     state.filter(element => element !=='hey')
 -Adding array
- element          state.push('hola')              [...state, 'hola']
+ element            state.push('hola')              [...state, 'hola']
 -Replacing array
- element          state[0] = 'hey'                state.map(el => el === 'hey' ? 'later' : el)
-  
+ element            state[0] = 'hey'                state.map(el => el === 'hey' ? 'later' : el)
+
+OBJECT
+-Updating object
+ property           state.name = 'Malind'           {...state, name: 'Malind'}
+-Adding object
+ property           state.age = 27                  {...state, age: 27}
+-Removing object
+ property           delete state.name               {...state, age: undefined}
+                                                    OR
