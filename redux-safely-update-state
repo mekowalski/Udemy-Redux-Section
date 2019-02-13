@@ -18,4 +18,4 @@ OBJECT
  property           state.age = 27                  {...state, age: 27}
 -Removing object
  property           delete state.name               {...state, age: undefined}
-                                                    OR
+                                                    OR _omit(stage, 'age') (Lodash library)
