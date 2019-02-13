@@ -89,3 +89,14 @@ eg: Reducer called with Action and previous State value
   profile.name = 'Kristopher'
   profile => {name: 'Kristopher
   ***update value of property, add key-value pair or any time a key-value pair is removed
+
+  eg: postsReducer BAD EXAMPLE
+  export default (state, action) => {
+    //BAD
+    state[0] = 'Malind'
+    state.pop()
+    state.push()
+
+    state.name = 'Ryan'
+    state.age = 26
+  }
