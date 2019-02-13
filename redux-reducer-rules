@@ -82,3 +82,10 @@ eg: Reducer called with Action and previous State value
   colors.push('white') => 3
   colors => (3) ["yellow", "green", "white"]
   ***change content of array by adding, removing or changing the item in array
+
+  -eg: Mutate an object
+  const profile = {name: 'Malind'}
+  profile => {name: 'Malind'}
+  profile.name = 'Kristopher'
+  profile => {name: 'Kristopher
+  ***update value of property, add key-value pair or any time a key-value pair is removed
