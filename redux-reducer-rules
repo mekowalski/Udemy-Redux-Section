@@ -104,3 +104,13 @@ eg: Reducer called with Action and previous State value
   4. Inside JS, strings & numbers are immutable values, cannot change them in the same way as [] or {}
   -Don't need to worry about this mutation rule
   -Reducers most frequently return an array or object therefore mutation is present
+
+*MISLEADING, POSSIBLY FALSE*
+-Blog post, tutorials, even documentation that give the same statement
+-Truth is: State argument can be mutated!!!
+-Redux will never give an error when state is mutated
+(state.push(), .pop(), .name = 'Malind', etc will not throw error)
+
+-There is this rule for a reason
+*ONE CASE WHERE MUTATING STATE ARGUMENT WILL LAND TROUBLE*
+-Application will not work as expected
