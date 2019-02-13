@@ -4,7 +4,18 @@ Arrays
 const numbers = [3, 6, 9]
 
 -In JS, easily compare equality between 2 values with ===
+-Number and strings are more a value comparison(is the number 3 equal to the VALUE of 3?)
 3 === 3 => true
 'hey' === 'hey' => true
 3 !== 1 => true
 3 !== 3 => false (because 3 is equal to 3)
+
+-Comparison operator can also be used on arrays and objects
+numbers === numbers => true
+
+-When comparing arrays/objects, JS is checking to see it is a reference to the exact array in memory
+-NOT the content of the array
+eg:
+numbers === [3, 6, 9] => false
+*because comparison isn't between array content(as the are the exact same)
+*comparison is between whether or not the numbers is referencing the exact array in memory
