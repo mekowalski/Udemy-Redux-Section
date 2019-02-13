@@ -100,3 +100,7 @@ eg: Reducer called with Action and previous State value
     state.name = 'Ryan'
     state.age = 26
   }
+
+  4. Inside JS, strings & numbers are immutable values, cannot change them in the same way as [] or {}
+  -Don't need to worry about this mutation rule
+  -Reducers most frequently return an array or object therefore mutation is present
