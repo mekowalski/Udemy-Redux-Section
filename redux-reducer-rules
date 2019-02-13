@@ -114,3 +114,16 @@ eg: Reducer called with Action and previous State value
 -There is this rule for a reason
 *ONE CASE WHERE MUTATING STATE ARGUMENT WILL LAND TROUBLE*
 -Application will not work as expected
+
+-Good practice to NEVER mutate state argument
+-BTS of this rule to understand Redux
+-Source code: https://github.com/reduxjs/redux => src => combineReducers.js => hasChanged variable
+*Anytime an action is dispatched, hasChanged code will execute
+1. hasChanged is a key variable that is defined
+2. a For loop will iterate over all reducers in App
+3. body of For loop, variable previousStateForKey will assign the last state value the reducer returned
+4. variable nextStateForKey will actually invoke reducer and return new state value
+5. Redux will check to see if the reducer has return a value of 'undefined'
+6. If you get passed that check, hasChanged will take value of direct comparison for nextStateForKey and
+   previousStateForKey
+   (DO NOT MUTATE STATE RULE BOILS DOWN TO THIS RIGHT HERE)
