@@ -60,7 +60,17 @@ eg: Reducer called with Action and previous State value
   *Only supposed to look at previous state value and Action object to decide what to return
   eg: postsReducer BAD EXAMPLE
   export default () => {
+    //bad1
     return document.querySelector('input')
+
+    //bad2
+    return axios.get('/posts')
+  }
+
+  eg: postsReducer GOOD EXAMPLE
+  export default (state, action) => {
+    return state + action
+    //not actual correct code but return a combo value of state arg PLUS action arg
   }
 
 -Must NOT mutate its input 'state' argument
