@@ -1,2 +1,13 @@
 -Inevitably developers will work with a Reducer that will return an Array or Object and it will need to be
 changed
+
+Syntax for working with Arrays and Objects without mutating State
+                  BAD                             GOOD
+ARRAY
+-Removing array
+ element          state.pop()                     state.filter(element => element !=='hey')
+-Adding array
+ element          state.push('hola')              [...state, 'hola']
+-Replacing array
+ element          state[0] = 'hey'                state.map(el => el === 'hey' ? 'later' : el)
+  
