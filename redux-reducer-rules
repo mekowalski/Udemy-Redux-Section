@@ -127,3 +127,7 @@ eg: Reducer called with Action and previous State value
 6. If you get passed that check, hasChanged will take value of direct comparison for nextStateForKey and
    previousStateForKey
    (DO NOT MUTATE STATE RULE BOILS DOWN TO THIS RIGHT HERE)
+7. hasChanged will be either true or false, considering all the reducers within an App
+8. After the For loop, the value of hasChanged will be looked at via boolean
+  -If the value is true, the result of entire function will return the newState object
+  -If the value is false, the result is the current/previous state from reducer last ran
