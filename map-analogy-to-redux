@@ -20,7 +20,7 @@ Dispatch: Form Receiver made copies of the Form and handed it off to each Dept
 
 Reducers: Each Dept has its own set of Data
   -Function responsible for taking in an Action and some existing amount of Data
-  -Processes that Data then makes changes to the Data
+  -Processes that Action then makes changes to the Data
   -Finally returns Data to be centralized in a location
 
 State: Company Data Bank for Management
