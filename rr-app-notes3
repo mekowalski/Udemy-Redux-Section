@@ -11,3 +11,9 @@ REACT SIDE
 -Components
   1. BookList: Renders the list of Books with Title and Author only
   2. BookDetail: Render the Book details of publishedDate, pageCount and genre
+
+REACT-REDUX
+-Install redux
+-Install react-redux(3rd library)
+*Make sure that React and Redux works together
+*this app will help with HOW react-redux works
