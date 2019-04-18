@@ -8,7 +8,7 @@ Person dropping off Form ---> the Form ---> Form Receiver ---> Departments ---> 
 INSURANCE COMPANY
 
 Action Creator: Starts with Customer dropping a Form off
-  -Function that creates/returns plain JS object
+  -Function that creates/returns plain JS object(which is referred to as an Action)
 
 Action: Form describes how they want to change data within the company including a Type and Payload
   -Plain JS object(Action) that has a Type and Payload property
