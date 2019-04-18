@@ -23,6 +23,7 @@ store; //Represents Redux app, contains all the Reducers and all State/Data prod
 -first create Action to pass to Dispatch
 const action = createPolicy('Malind', 30)
 
+-store.dispatch() is Form Receiver that makes the copies
 -Just like the original Form Receiver, dispatch makes copies and sends to Reducers
 -When Action is passed to store.dispatch(), the Action will forward to each Reducer
 -Each Reducer function ran and processed that Action(Form)
@@ -31,6 +32,7 @@ store.dispatch(action);
 
 
 -Function that gets entire Company Data Bank
+-store.getState() essentially get all assembled bank of data, get access to entire Store information
 store.getState()
 console.log(store.getState()) =>
 >{accounting: 130, claimsHistory: Array(0), policies: Array(1)}
