@@ -8,7 +8,7 @@ REDUX CYCLE
 Action Creator ---> Action ---> Dispatch ---> Reducers ---> State
 
 ONE
--Lets build and insurance company!
+-Lets build an insurance company!
 Policy: Customer holds a 'policy', if bad stuff happens to them then we pay them
 Claim: Customer has something bad happen to them, we need to pay them
 ***These are insurance terms, NOT Redux terms***
