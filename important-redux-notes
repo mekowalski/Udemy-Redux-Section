@@ -15,6 +15,7 @@ COMBINEREDUCERS CALL
 -Making use of combineReducers wire up the Reducers altogether
 -When using specific key names of the Reducer names, there ends up being a State object
 -Convention to name the keys and reducers to the same names
+-These key names are the property of the State object
 
 
 DISPATCH
