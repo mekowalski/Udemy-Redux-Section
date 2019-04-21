@@ -3,12 +3,13 @@ General Data-Loading with Redux
 -Every time data needs to be loaded from an outside API, it will almost always be the exact same flow
 
 
-1-3: COMPONENTS GERENALLY IN CHARGE OF FETCHING DATA NEEDED BY CALLING ACTION CREATOR
+1-3: COMPONENTS GENERALLY IN CHARGE OF FETCHING DATA NEEDED BY CALLING ACTION CREATOR
 1. Component gets rendered onto screen
   -PostList comp getting a list of posts from external API
 
 2. Component's `componentDidMount` lifecycle method gets called
   -Because of PostList getting list from external API and it is called on a class-based component
+  -Most common place to initiate data fetch request is in the `componentDidMount` lifecycle
 
 3. Call Action Creator from `componentDidMount`
   -When PostList initially renders, the Action Creator will be called
@@ -17,6 +18,7 @@ General Data-Loading with Redux
 4-6: ACTION CREATORS ARE RESPONSIBLE FOR MAKING API REQUEST(REDUX-THUNK COMES INTO PLAY)
 4. Action Creator runs code to make API request
   -Will use Axios to make API requests over to external API
+  -Generally the Action Creator will initiate the data fetching process
 
 5. API responds with data
   -The list of blog posts(example)
@@ -25,7 +27,7 @@ General Data-Loading with Redux
   -Dispatch method will dispatch Action and send it off to all Reducers in app
 
 
-7-8: GET FETCHED DATA INTO A COMPONENT BY GENEREATING NEW STATE IN REDUX STORE, THEN GETTING THAT INTO
+7-8: GET FETCHED DATA INTO A COMPONENT BY GENERATING NEW STATE IN REDUX STORE, THEN GETTING THAT INTO
   THE COMPONENT THROUGH MAPSTATETOPROPS
 7. A Reducer sees the Action, returns the data off the Payload
   -A specific Reducer will be watching for the action.type and pull of only the data from that property
@@ -35,3 +37,5 @@ General Data-Loading with Redux
   -The State will be sent off to React side of app which will cause re-render
   -This time around, the actual list is present, therefore use `mapStateToProps` to get list of posts out of
   global State object and into PostList component
+  -Always the same approach to get data out of Redux Store and into a React Component: make use of connect()
+  and mapStateToProps() functions
