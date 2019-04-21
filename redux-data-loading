@@ -1,0 +1,3 @@
+General Data-Loading with Redux
+
+-Every time data needs to be loaded from an outside API, it will almost always be the exact same
