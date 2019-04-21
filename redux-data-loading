@@ -3,11 +3,22 @@ General Data-Loading with Redux
 -Every time data needs to be loaded from an outside API, it will almost always be the exact same flow
 
 1. Component gets rendered onto screen
-  eg: PostList comp getting a list of posts from external API
+  -PostList comp getting a list of posts from external API
 
 2. Component's `componentDidMount` lifecycle method gets called
-  eg: Because of PostList getting list from external API and it is called on a class-based component
+  -Because of PostList getting list from external API and it is called on a class-based component
 
 3. Call Action Creator from `componentDidMount`
+  -When PostList initially renders, the Action Creator will be called
+
 4. Action Creator runs code to make API request
+  -Will use Axios to make API requests over to external API
+
 5. API responds with data
+  -The list of blog posts(example)
+
+6. Action Creator returns and Action with fetched data on Payload property
+
+7. A Reducer sees the Action, returns the data off the Payload
+
+8. New State object is generated, Redux/React-Redux cause React app tp re-render
