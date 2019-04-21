@@ -1,3 +1,13 @@
 General Data-Loading with Redux
 
--Every time data needs to be loaded from an outside API, it will almost always be the exact same
+-Every time data needs to be loaded from an outside API, it will almost always be the exact same flow
+
+1. Component gets rendered onto screen
+  eg: PostList comp getting a list of posts from external API
+
+2. Component's `componentDidMount` lifecycle method gets called
+  eg: Because of PostList getting list from external API and it is called on a class-based component
+
+3. Call Action Creator from `componentDidMount`
+4. Action Creator runs code to make API request
+5. API responds with data
