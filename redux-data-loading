@@ -18,7 +18,11 @@ General Data-Loading with Redux
   -The list of blog posts(example)
 
 6. Action Creator returns and Action with fetched data on Payload property
+  -Dispatch method will dispatch Action and send it off to all Reducers in app
 
 7. A Reducer sees the Action, returns the data off the Payload
+  -A specific Reducer will be watching for the action.type and pull of only the data from that property
 
-8. New State object is generated, Redux/React-Redux cause React app tp re-render
+8. New State object is generated, Redux/React-Redux cause React app to re-render
+  -Reducers return values that will form new State object in Redux Store
+  -The State will be sent off to React side of app which will cause re-render
