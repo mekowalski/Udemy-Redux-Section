@@ -63,7 +63,7 @@ ISSUE NUMBER TWO - DATA ISN'T RETRIEVED FROM API
 
 WHAT IS HAPPENING BEHIND THE SCENES
 Time| Action creator called                       Request made to
-    | Action returned                              Typeicode API
+    | Action returned                              Typicode API
     | Action sent to all Reducers                        |
     | Reducers run                                       |
     | *Data NOT Here!*                                   |
