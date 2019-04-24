@@ -64,7 +64,7 @@ e. Wait for request to finish
 f. Request completed ---> Use dispatch() to manually dispatch an Action(entire key part)
 g. New Action is created(dispatching manually from redux-thunk or inside that function, it will always be
    a plain object)
-***END FUNCTION CYCLE
+***END FUNCTION CYCLE***
 
 h. New Action will flow back to dispatch(step b)
 i. New Action is an object that will be inside Redux-Thunk(step c)
