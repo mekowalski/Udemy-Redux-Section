@@ -58,6 +58,7 @@ eg: Reducer called with Action and previous State value
   *Not supposed to reach out of the Reducer function
   *NOT supposed to make an API request
   *Only supposed to look at previous state value and Action object to decide what to return
+  *Pure Reducers will only ever return values that use their input arguments
   eg: postsReducer BAD EXAMPLE
   export default () => {
     //bad1
@@ -87,7 +88,7 @@ eg: Reducer called with Action and previous State value
   const profile = {name: 'Malind'}
   profile => {name: 'Malind'}
   profile.name = 'Kristopher'
-  profile => {name: 'Kristopher
+  profile => {name: 'Kristopher'}
   ***update value of property, add key-value pair or any time a key-value pair is removed
 
   eg: postsReducer BAD EXAMPLE
