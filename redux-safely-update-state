@@ -18,7 +18,7 @@ OBJECT
  property           state.age = 27                  {...state, age: 27}
 -Removing object
  property           delete state.name               {...state, age: undefined}
-                                                    OR _omit(stage, 'age') (Lodash library)
+                                                    OR _.omit(stage, 'age') (Lodash library)
 
 *Right side statements will be written in Reducers often!
 *It will help create new objects/arrays for modification without original mutation
