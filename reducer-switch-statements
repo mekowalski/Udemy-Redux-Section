@@ -1,0 +1,5 @@
+-Reducer will have arguments of State and Action
+eg:
+  export default (state, action) => {
+
+  }
