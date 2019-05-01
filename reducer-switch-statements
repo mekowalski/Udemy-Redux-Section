@@ -27,9 +27,17 @@ SWITCH STATEMENTS
 -Valid JavaScript syntax, not React/Redux specific
 -Take a look at the action.type property
 -Then define a few cases inside the Reducer
+-Under that case, define what to do if the action.type property matches the expression
+-To always return some value, add in a default case to switch statement to return state
 eg:
   export default (state = [], action) => {
-    switch () {
-
+    switch (action.type) {
+      case: 'FETCH_POSTS':
+        return action.payload
+      default:
+        return state
     }
   }
+
+*This helps with multiple types the Reducer needs to handle
+*This is extremely common syntax for Reducers
