@@ -1,3 +1,4 @@
+CONDITIONAL IF STATEMENTS
 -Reducer will have arguments of State and Action
 eg:
   export default (state, action) => {
@@ -5,12 +6,18 @@ eg:
   }
 
 -Inside reducer, inspect the Action Type
+-Because the state will deal with an array, the default state will be an empty array
+-The very first time this reducer is called, return the default state of empty array
 -If action type matches the expression, then return a value
 -If there is no action type match, then return state
 eg:
-  export default (state, action) => {
+  export default (state = [], action) => {
     if (action.type === 'FETCH_POSTS') {
       return action.payload
     }
     return state
   }
+
+*This IF statement syntax inside the Reducer is not common
+*In order to make sure handling of every Action comes into the Reducer without error
+*Very frequently use switch statements
