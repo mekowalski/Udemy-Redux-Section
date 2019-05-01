@@ -5,9 +5,9 @@ eg:
 
   }
 
--Inside reducer, inspect the Action Type
+-Inside Reducer, inspect the Action Type
 -Because the state will deal with an array, the default state will be an empty array
--The very first time this reducer is called, return the default state of empty array
+-The very first time this Reducer is called, return the default state of empty array
 -If action type matches the expression, then return a value
 -If there is no action type match, then return state
 eg:
@@ -21,3 +21,15 @@ eg:
 *This IF statement syntax inside the Reducer is not common
 *In order to make sure handling of every Action comes into the Reducer without error
 *Very frequently use switch statements
+
+
+SWITCH STATEMENTS
+-Valid JavaScript syntax, not React/Redux specific
+-Take a look at the action.type property
+-Then define a few cases inside the Reducer
+eg:
+  export default (state = [], action) => {
+    switch () {
+
+    }
+  }
