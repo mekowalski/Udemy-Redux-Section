@@ -22,3 +22,5 @@ OBJECT
 
 *Right side statements will be written in Reducers often!
 *It will help create new objects/arrays for modification without original mutation
+* _.omit is preferred over `undefined` replacement
+* _.omit does not mutate the original object, it will create a new object without the removed property
