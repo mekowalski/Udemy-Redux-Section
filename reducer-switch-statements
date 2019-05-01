@@ -3,3 +3,14 @@ eg:
   export default (state, action) => {
 
   }
+
+-Inside reducer, inspect the Action Type
+-If action type matches the expression, then return a value
+-If there is no action type match, then return state
+eg:
+  export default (state, action) => {
+    if (action.type === 'FETCH_POSTS') {
+      return action.payload
+    }
+    return state
+  }
