@@ -1,2 +1,8 @@
 HELPER FUNCTION
 Lodash Library: Utility JS library with a ton of functions built-in that make J a bit simpler to write
+
+MEMOIZE FUNCTION
+-When memoize is used on a function, the original function only runs 1 time
+-The function will run again with a new argument called on it but again will not run a 2nd time
+
+-This is helpful for calling an Action Creator with a unique ID, 1 time
