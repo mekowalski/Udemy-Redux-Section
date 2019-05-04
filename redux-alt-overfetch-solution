@@ -21,3 +21,14 @@ EXAMPLE: actions/index.js
       dispatch({ type: 'FETCH_USER', payload: response.data })
     }
   }
+
+1. New action creator
+eg: actions/index.js
+  -Challenging part: this will call fetchPosts & fetchUser multiple times
+  -All the React code, the entire application will call this action creator alone
+  -No longer will call other 2 action creators
+  export const fetchPostsAndUsers = () => {
+    return async dispatch => {
+
+    }
+  }
