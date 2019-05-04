@@ -22,13 +22,24 @@ EXAMPLE: actions/index.js
     }
   }
 
-1. New action creator
+
+NEW ACTION CREATOR
 eg: actions/index.js
   -Challenging part: this will call fetchPosts & fetchUser multiple times
   -All the React code, the entire application will call this action creator alone
   -No longer will call other 2 action creators
+  -When 1 of the other 2 actions creators is called, need to make sure the action/function it returns, also
+   gets dispatched
+
   export const fetchPostsAndUsers = () => {
     return async dispatch => {
-
+      dispatch(fetchPosts())
     }
   }
+
+  -To call the action creator, pass the result of that action creator through dispatch()
+  -What happens is:
+  1. An action creator is called through dispatch()
+  2. It invokes the action creator function
+  3. Which then returns the inner function
+  (basically dispatch a function)
