@@ -1,1 +1,8 @@
 -Solve overfetching with new action creator of `fetchPostsAndUsers()`(example)
+-This solution is a bit more obvious in nature
+-By creating a new Action Creator the logic executed is:
+  1. First call fetchPosts
+  2. Get a list of all the posts
+  3. From that list, find all the unique userIds
+  4. Iterate over all the unique userIds
+  5. Then call fetchUser with each userId
