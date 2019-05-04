@@ -11,3 +11,13 @@
 -fetchPostsAndUsers won't have logic to make a request to the API
 -Both action creators will keep the logic of network requests
 -This keeps action creators small & compact
+
+EXAMPLE: actions/index.js
+  -Revert back to original action creator
+  export const fetchUser = id => {
+    return async dispatch => {
+      const response = await jsonPlaceholder.get(`/users/${id}`)
+
+      dispatch({ type: 'FETCH_USER', payload: response.data })
+    }
+  }
