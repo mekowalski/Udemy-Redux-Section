@@ -6,3 +6,8 @@
   3. From that list, find all the unique userIds
   4. Iterate over all the unique userIds
   5. Then call fetchUser with each userId
+
+-Biggest twist is that fetchPosts and fetchUser action creators won't be replaced
+-fetchPostsAndUsers won't have logic to make a request to the API
+-Both action creators will keep the logic of network requests
+-This keeps action creators small & compact
