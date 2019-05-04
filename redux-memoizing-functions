@@ -40,9 +40,7 @@ eg: actions/index.js
 - These 2 arguments need to be passed in _fetchUser
 eg: Pass both arguments in _fetchUser within the Action Creator
   export const fetchUser = id => dispatch => {
-    return async dispatch => {
-      _fetchUser(id, dispatch)
-    }
+    _fetchUser(id, dispatch)
   }
 
 eg: Memoize function will receive the 2 arguments
