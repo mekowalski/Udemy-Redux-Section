@@ -43,3 +43,15 @@ eg: actions/index.js
   2. It invokes the action creator function
   3. Which then returns the inner function
   (basically dispatch a function)
+
+
+Next: Get the list of posts
+-Make sure not to get list of post until action creator has completed the fetch
+-Await keyword will make sure the API request is completed before moving onto anything else inside new
+ action creator
+eg:
+  export const fetchPostsAndUsers = () => {
+    return async dispatch => {
+      await dispatch(fetchPosts())
+    }
+  }
