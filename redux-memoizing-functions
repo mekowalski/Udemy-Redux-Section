@@ -24,3 +24,11 @@ eg: actions/index.js
 
     dispatch({ type: 'FETCH_USER', payload: response.data })
   })
+
+  5. Make sure to call this memoized version within Action Creator
+  eg:
+  export const fetchUser = id => {
+    return async dispatch => {
+      _fetchUser()
+    }
+  }
