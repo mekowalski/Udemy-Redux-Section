@@ -6,3 +6,10 @@ MEMOIZE FUNCTION
 -The function will run again with a new argument called on it but again will not run a 2nd time
 
 -This is helpful for calling an Action Creator with a unique ID, 1 time
+
+
+ONE TIME MEMOIZATION
+-Define function outside Action Creator
+-This function will make the request
+-It will also Dispatch the Action
+-Memoize all of this OUTSIDE the Action Creator
