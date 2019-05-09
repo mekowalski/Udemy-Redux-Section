@@ -72,3 +72,15 @@ eg: channel dedicated to programming, channel dedicated to cooking/baking, etc
   -User can create new stream/channel
   -User can edit stream/channel they have created
   -User can delete stream/channel they have created
+
+
+PAGES:
+-How a user may interact with records inside an application
+-Index Page:
+  -List of streams for not logged in user
+  -Slightly different list and options for logged in user
+-Show Page:
+  -Specific content to user
+-Create Page: Form to create a stream
+-Edit Page: Form to edit a stream
+-Delete Page: Form to delete a stream
