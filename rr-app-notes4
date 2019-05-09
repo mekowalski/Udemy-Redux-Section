@@ -19,3 +19,11 @@ Streamer's Computer                  Real Time          |--->   Viewer's Browser
 -RTMP is only about streaming videos, sole purpose
 -A viewer may want to know what is currently being streamed or what stream exists inside the application
 -Separate API server that stores a list of different streams/channels available within the application
+
+-Viewer will see a list of streams available
+-They then can select that stream
+-This will then make a request to RTMP server to get live video feed
+-Lastly the video feed will be shown on viewer's screen
+
+
+STRUCTURE
