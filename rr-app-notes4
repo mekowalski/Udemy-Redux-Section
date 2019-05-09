@@ -30,3 +30,20 @@ STRUCTURE
 -React: App will run inside viewer's browser
 -Tiny API Server: This will list out all the streams/videos to watch
 -RTMP Server: Responsible for handling the video streams itself
+
+
+MOCKUPS
+
+Index Page: (pretend this is the screen)
+Streamer                  Streams     Login
+---------------------------------------------
+STREAMS
+Stream Name
+Stream Description
+---------------------
+Stream Name
+Stream Description
+---------------------
+Stream Name
+Stream Description
+---------------------
