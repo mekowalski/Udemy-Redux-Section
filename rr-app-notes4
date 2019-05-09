@@ -58,3 +58,17 @@ FIRST:
 SECOND:
 -There will be Login/Logout buttons
 -Will build an Authentication system into application using Google login
+
+
+-This App will allow users to create unlimited channels and streams
+eg: channel dedicated to programming, channel dedicated to cooking/baking, etc
+
+-There will be different sets of rules for when a user is logged in VERSUS logged out
+-LOGGED OUT:
+  -User can view list of all streams/channels
+  -User can view video for single stream
+
+-LOGGED IN:
+  -User can create new stream/channel
+  -User can edit stream/channel they have created
+  -User can delete stream/channel they have created
