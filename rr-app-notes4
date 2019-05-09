@@ -47,3 +47,14 @@ Stream Description
 Stream Name
 Stream Description
 ---------------------
+
+-Too many pages so I'm just going to explain those and not try to create a screen on the page
+FIRST:
+-There is a variety os pages/streams the viewer can visit inside the application
+-The URL is going to determine what content will display on the screen
+-This will show a different set of components to viewer
+-There will be Navigation that will help determine what is displayed
+
+SECOND:
+-There will be Login/Logout buttons
+-Will build an Authentication system into application using Google login
