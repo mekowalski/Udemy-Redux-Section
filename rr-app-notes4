@@ -1,2 +1,10 @@
--This App may look completely complicated but it is straight forward to build
--100% focus on React/Redux, not much backend pieces
+This App may look completely complicated but it is straight forward to build
+100% focus on React/Redux, not much backend pieces
+redux-react-streaming-app
+
+
+BEHIND THE SCENES: Video Streaming
+
+Streamer's Computer                  Real Time          |--->   Viewer's Browser
+  Open Broadcast  ------------>  Messaging Proto- --->  |--->   Viewer's Browser
+  Software(OBS)                 col(RTMP) Server        |--->   Viewer's Browser
