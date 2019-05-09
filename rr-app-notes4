@@ -27,3 +27,6 @@ Streamer's Computer                  Real Time          |--->   Viewer's Browser
 
 
 STRUCTURE
+-React: App will run inside viewer's browser
+-Tiny API Server: This will list out all the streams/videos to watch
+-RTMP Server: Responsible for handling the video streams itself
