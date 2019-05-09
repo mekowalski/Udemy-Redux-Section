@@ -8,3 +8,14 @@ BEHIND THE SCENES: Video Streaming
 Streamer's Computer                  Real Time          |--->   Viewer's Browser
   Open Broadcast  ------------>  Messaging Proto- --->  |--->   Viewer's Browser
   Software(OBS)                 col(RTMP) Server        |--->   Viewer's Browser
+
+-A streamer is running a computer that is running some streaming software(OBS is actual, real program)
+-That will record the desktop and stream that video to an external server
+  -RTMP server that receives an incoming video feed and broadcasts it out to many viewers
+-The viewers can then watch on their browsers
+
+-RTMP server is simple and straight forward to setup
+-In a real streaming application, there is another server inside the mix
+-RTMP is only about streaming videos, sole purpose
+-A viewer may want to know what is currently being streamed or what stream exists inside the application
+-Separate API server that stores a list of different streams/channels available within the application
