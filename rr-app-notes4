@@ -84,3 +84,11 @@ PAGES:
 -Create Page: Form to create a stream
 -Edit Page: Form to edit a stream
 -Delete Page: Form to delete a stream
+
+
+051419
+-A few sub-projects inside a main directory
+  -Project Directory
+    -React Application
+    -RTMP Server Application
+    -API Application
