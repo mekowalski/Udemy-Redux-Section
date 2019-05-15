@@ -8,3 +8,7 @@ react-router: Core navigation lib, don't install this manually
 react-router-dom: Navigation for dom-based applications
 react-router-native: Navigation for react-native applications
 react-router-redux: Bindings between Redux and React-Router(not necessary)
+
+
+HOW REACT-ROUTER-DOM WORKS
+eg: in an App component, above the declaration
