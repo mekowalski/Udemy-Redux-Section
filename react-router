@@ -4,7 +4,7 @@ npm install --save react-router-dom
 
 
 React-Router Family Library
-react-router:
-react-router-dom:
-react-router-native:
-react-router-redux
+react-router: Core navigation lib, don't install this manually
+react-router-dom: Navigation for dom-based applications
+react-router-native: Navigation for react-native applications
+react-router-redux: Bindings between Redux and React-Router(not necessary)
