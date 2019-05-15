@@ -1,1 +1,10 @@
-What is React-Router
+WHAT IS REACT-ROUTER
+-Install:
+npm install --save react-router-dom
+
+
+React-Router Family Library
+react-router:
+react-router-dom:
+react-router-native:
+react-router-redux
