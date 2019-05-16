@@ -92,10 +92,24 @@ Route Definitions:
   <Route path='/pagetwo' component={pageTwo}>
   <Route path='/pagetwo/3' component={pageTwo}>
 
-
 -Rule for deciding what components/routes will be shown is:
 extractedPath.contains(path)
 *not exact code RR runs but works 90% of the time*
 -Take the string for the extracted 'path' from URL
 -Run .contains() method with the path, (check if string in path is inside extractedPath)
--This will only show a path of
+-This will only show a path of: '/'
+
+
+-Abbreviated Version/Example
+Address Bar: myapp.co/pagetwo
+Path Extracted: /pagetwo
+Route Definition:
+  path='/'
+  path='/pagetwo'
+  path='/pagetwo/3'
+
+-Does the extracted path string of '/pagetwo' contain a path equal to path='/'
+  YES because of the '/'
+-Next route will check if the extracted path string of '/pagetwo' contain a path equal to path='pagetwo'
+  YES because of the '/pagetwo'
+-This will show both paths of '/' and '/pagetwo'
