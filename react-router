@@ -83,7 +83,6 @@ HOW PATHS GET MATCHED
 *multiple Route components that match a given URL and all show themselves on screen*
 
 WHAT THE PATH PROPERTY ACTUALLY DOES
--exact:
 
 Address Bar: myapp.co/
 Path Extracted: /
@@ -113,3 +112,13 @@ Route Definition:
 -Next route will check if the extracted path string of '/pagetwo' contain a path equal to path='pagetwo'
   YES because of the '/pagetwo'
 -This will show both paths of '/' and '/pagetwo'
+
+
+OVERRIDE CERTAIN RR BEHAVIOR
+-Optionally add a prop of exact
+-exact: solo keyword that equivalent to exact={true}
+-Cause RR to change the rule to match the paths, slightly
+eg: extractedPath === path
+*does extracted path EQUAL exact path*
+*closer to how developers assume the system would/should work*
+-exact only modifies the Route that it's added to
