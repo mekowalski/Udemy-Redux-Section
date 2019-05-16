@@ -5,9 +5,16 @@ npm install --save react-router-dom
 
 React-Router Family Library
 react-router: Core navigation lib, don't install this manually
+  -This library decides how to work with React, how to change content and other low-level logic
+
 react-router-dom: Navigation for dom-based applications
+  -This works specifically in the browser, for browser-based, WEB navigation
+
 react-router-native: Navigation for react-native applications
+  -This works specifically for native-mobile applications
+
 react-router-redux: Bindings between Redux and React-Router(not necessary)
+  -This is deprecated now, but FOREAL, don't use it. Inside official docs, it's mentioned to not use
 
 
 HOW REACT-ROUTER-DOM WORKS
