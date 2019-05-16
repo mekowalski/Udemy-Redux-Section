@@ -46,4 +46,15 @@ const App = () => {
   )
 }
 
-***Based upon URL, different content on the screen will be displayed***
+***Based upon URL(route), different content on the screen will be displayed***
+-WHAT PART OF URL DOES RR CARE ABOUT
+-RR doesn't care about entire url
+-RR cares about all the characters listed after the domain definition and the port definition
+
+Full URL                              Part RR cares about
+localhost:3000                              /
+localhost:3000/pageone                      /pageone
+localhost:3000/posts/3                      /posts/5
+google.com/search                           /search
+learn.co/mekowalski                         /mekowalski
+github.com/mekowalski/streams-client        /mekowalski/streams-client
