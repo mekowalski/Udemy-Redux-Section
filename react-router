@@ -28,9 +28,15 @@ const PageTwo = () => {
 }
 
 //here, place instance of BrowserRouter(react component)
+//within BrowserRouter, pass in a Route with a path
+//exact is alone
+//component={} references a JS variable
 const App = () => {
   return (
   <div>
+    <BrowserRouter>
+      <Route path='/' exact component={PageOne}/>
+    </BrowserRouter>
   </div>
   )
 }
