@@ -78,7 +78,24 @@ HOW THE CHARACTERS AFTER DOMAIN IS USED BY RR
 
 HOW PATHS GET MATCHED
 -Route components got a property passed to it that determines what to show on the screen via ='path'
--exact:
 -component={}: show the JS reference
 -Different routes can be matched by the same URLs
 *multiple Route components that match a given URL and all show themselves on screen*
+
+WHAT THE PATH PROPERTY ACTUALLY DOES
+-exact:
+
+Address Bar: myapp.co/
+Path Extracted: /
+Route Definitions:
+  <Route path='/' component={pageOne} />
+  <Route path='/pagetwo' component={pageTwo}>
+  <Route path='/pagetwo/3' component={pageTwo}>
+
+
+-Rule for deciding what components/routes will be shown is:
+extractedPath.contains(path)
+*not exact code RR runs but works 90% of the time*
+-Take the string for the extracted 'path' from URL
+-Run .contains() method with the path, (check if string in path is inside extractedPath)
+-This will only show a path of
