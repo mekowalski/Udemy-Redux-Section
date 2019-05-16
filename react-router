@@ -67,10 +67,18 @@ HOW THE CHARACTERS AFTER DOMAIN IS USED BY RR
   -When application is created, an instance of BrowserRouter is created
   -This component internally creates an object of 'history'
   -'history' will look at URL and extract just the portion RR cares about
-  -BrowserRouter will then commnuicate to both Route path components
+  -BrowserRouter will then communicate to both Route path components
 
 3. Route path='/' | Route path='/pagetwo'
   -Visible only when the 'path' matches the current URL
   -Route components decide either to show/hide themselves dependent on path of URL and path property
-  
+
 4. PageOne Component | PageTwo Component
+
+
+HOW PATHS GET MATCHED
+-Route components got a property passed to it that determines what to show on the screen via ='path'
+-exact:
+-component={}: show the JS reference
+-Different routes can be matched by the same URLs
+*multiple Route components that match a given URL and all show themselves on screen*
