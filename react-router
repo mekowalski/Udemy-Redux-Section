@@ -19,3 +19,18 @@ react-router-redux: Bindings between Redux and React-Router(not necessary)
 
 HOW REACT-ROUTER-DOM WORKS
 eg: in an App component, above the declaration
+const PageOne = () => {
+  return <div>Page One</div>
+}
+
+const PageTwo = () => {
+  return <div>Page Two</div>
+}
+
+//here, place instance of BrowserRouter(react component)
+const App = () => {
+  return (
+  <div>
+  </div>
+  )
+}
