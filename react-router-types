@@ -6,6 +6,11 @@ eg: localhost:3000/pagetwo  (/pagetwo is used as path)
 
 2. HashRouter: Uses everything after a # as the 'path'
 eg: localhost:3000/#/pagetwo  (/#/pagetwo is used as path)
+-This injects a # into the URL after the port, automatically
+-Additionally, navigating to another page will still include /# then /pagetwo
+-This is the main difference: just reflecting the part of the URL that RR cares about after #
 
 3. MemoryRouter: Doesn't use the URL to track navigation
 eg: localhost:3000/
+
+*refer to streams-app/streams-client/src/components/App.js for different examples*
