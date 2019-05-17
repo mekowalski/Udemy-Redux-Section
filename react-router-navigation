@@ -77,9 +77,9 @@ LINK NAVIGATION
 -Step 3 is most important for why Link is used
 -When Link is used, an anchor element is still used
 -BUT RR will detect a click on the anchor tag and override the default behavior
--This keeps the browser from navgivatin away
+-This keeps the browser from navgivation away
 -No React/Redux data will be dumped
 
 -This ideal of Not Making an Additional Request for a Separate HTML Document when a Link is Clicked is
  known as Single Page App(SPA) comes from
--SPA: allows loading a single document while navigating to a different page 
+-SPA: allows loading a single document while navigating to a different page
