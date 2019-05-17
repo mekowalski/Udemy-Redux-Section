@@ -1,2 +1,22 @@
-Current navigation of routes in an application is to manually change the route in the address bar
+-Current navigation of routes in an application is to manually change the route in the address bar
 eg: myapp.co/pageone => myapp.co/pagetwo
+
+-Traditional App with just HTML pages, an anchor tag may be used to navigate between pages
+eg: App Component
+const PageOne = () => {
+  return (
+    <div>
+      Page One
+      <a>Click for Page2</a>
+    </div>
+  )
+}
+
+const PageTwo = () => {
+  return (
+    <div>
+      Page Two
+      <a>Click for Page1</a>
+    </div>
+  )
+}
