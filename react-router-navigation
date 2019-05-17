@@ -40,3 +40,24 @@ BAD NAVIGATION(normal operation of anchor tag)
 
 -In addition to BrowserRouter and Route, pull in Link from react-router-dom
 -Link: React component used in place of any anchor tag
+-Replace <a /> with <Link />
+-Replace href='' with to=''
+-When clicked, this Link will take the user `to` that route
+
+eg: App Component
+return (
+  <div>
+    Page One
+    <Link to='/pagetwo'>Click Page2</Link>
+  </div>
+)
+}
+
+const PageTwo = () => {
+return (
+  <div>
+    Page Two
+    <Link to='/pageone'>Click Page1</Link>
+  </div>
+)
+}
