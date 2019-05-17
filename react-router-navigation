@@ -73,3 +73,13 @@ LINK NAVIGATION
 5. 'History' sees the updated URL, take URL and sends it to BrowserRouter
 6. BrowserRouter communicates the URL to Route components
 7. Route components re-render to show new set of components
+
+-Step 3 is most important for why Link is used
+-When Link is used, an anchor element is still used
+-BUT RR will detect a click on the anchor tag and override the default behavior
+-This keeps the browser from navgivatin away
+-No React/Redux data will be dumped
+
+-This ideal of Not Making an Additional Request for a Separate HTML Document when a Link is Clicked is
+ known as Single Page App(SPA) comes from
+-SPA: allows loading a single document while navigating to a different page 
