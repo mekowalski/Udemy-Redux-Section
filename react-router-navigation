@@ -7,7 +7,7 @@ const PageOne = () => {
   return (
     <div>
       Page One
-      <a>Click for Page2</a>
+      <a href='/pagetwo'>Click for Page2</a>
     </div>
   )
 }
@@ -16,7 +16,21 @@ const PageTwo = () => {
   return (
     <div>
       Page Two
-      <a>Click for Page1</a>
+      <a href='/pageone'>Click for Page1</a>
     </div>
   )
 }
+
+*this will create a link to the respective URLs and would work in the application*
+
+
+-Unfortunately, even though this works well, this is not the practice for navigating React-Router pages
+-Do not use anchor tags with RR
+BAD NAVIGATION(normal operation of anchor tag)
+1. <a /> tag is added to application with href='/pagetwo' and is clicked
+2. browser makes request to localhost:3000
+3. development server responds with index.html file(the same one inside the public DIR)
+4. THIS IS THE BAD PART: browser receives index.html file, dumps old HTML file it was showing(including all
+  the React/Redux state data!!!)
+5. index.html file lists JS files in script tags: browser downloads and executes theses scripts
+6. the app starts up
