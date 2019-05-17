@@ -34,3 +34,9 @@ BAD NAVIGATION(normal operation of anchor tag)
   the React/Redux state data!!!)
 5. index.html file lists JS files in script tags: browser downloads and executes theses scripts
 6. the app starts up
+
+-Every time <a /> is clicked, a new request is made for that document, every time that document needs to show
+-There isn't any saving of the data needed
+
+-In addition to BrowserRouter and Route, pull in Link from react-router-dom
+-Link: React component used in place of any anchor tag
