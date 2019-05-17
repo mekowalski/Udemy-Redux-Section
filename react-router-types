@@ -31,4 +31,12 @@ What happens when making a request IF localhost:3000 is a TRADITIONAL SERVER (Ja
 4. Server sends back the HTML document
 5. Content is displayed on the screen
 
+
+What happens if the traditional server doesn't have a route defined
+1. Browser makes request to back-end server
+2a. Do I have a route for /pageone
+2b. NO
+2c. Respond with a 404
+3. Server doesn't know where/what that route is and returns a 404 error(not found error)
+
 *refer to streams-app/streams-client/src/components/App.js for different examples*
