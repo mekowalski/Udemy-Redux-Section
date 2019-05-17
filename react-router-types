@@ -16,6 +16,7 @@ eg: localhost:3000/
 -After a Link is clicked, only localhost:3000 is present
 -Pressing Link 1 or Link 27 doesn't change URL whatsoever
 
+
 WHY IS THIS IMPORTANT
 -This comes down to deployment
 -BrowserRouter is most complicated to deploy inside any realistic setting
@@ -38,5 +39,19 @@ What happens if the traditional server doesn't have a route defined
 2b. NO
 2c. Respond with a 404
 3. Server doesn't know where/what that route is and returns a 404 error(not found error)
+
+
+REACT DEVELOPMENT SERVER
+-The server is run on the computer and accesses the React Development Server
+-Currently there is NO code for server execution
+-RDS has no clue what '/pagetwo' means
+
+1. Request is made to localhost:3000/pagetwo
+2. RDS goes through a process
+3a. Do I have anything special for /pagetwo
+3b. Check dev resources | Check public DIR
+3c. No, guess I'l have serve up the index.html file
+4. Don't know what/where that route is so I'll just give you the index.html file
+
 
 *refer to streams-app/streams-client/src/components/App.js for different examples*
