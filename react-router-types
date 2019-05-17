@@ -1,0 +1,6 @@
+React-Router has 3 different types of Routers available
+-The differences are the part of URL they are looking at to decide what content to show on the screen
+
+1. BrowserRouter: Uses everything after the TLD(.com, .net, etc) or port as the 'path'
+2. HashRouter: Uses everything after a # as the 'path'
+3. MemoryRouter: Doesn't use the URL to track navigation
