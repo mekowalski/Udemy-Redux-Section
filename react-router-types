@@ -49,9 +49,19 @@ REACT DEVELOPMENT SERVER
 1. Request is made to localhost:3000/pagetwo
 2. RDS goes through a process
 3a. Do I have anything special for /pagetwo
-3b. Check dev resources | Check public DIR
+3b. Check dev resources(CSS or JS file) | Check public DIR
 3c. No, guess I'l have serve up the index.html file
 4. Don't know what/where that route is so I'll just give you the index.html file
+
+-Unlike the Traditional server, if RDS is asked for a resource for a route that isn't defined, it won't
+ return a 404 message, RDS responds with index.html file
+-!!!THIS IS THE KEY TO HOW ALL THE BROWSERROUTER WORKS!!!
+-If any route is asked for, RDS will always responds with index.html file as opposed to 404 message
+-This is important because all route definitions are stuffed into JavaScript/client-side of app
+
+-Why this is difficult to setup is due to the mechanism of always responding the index.html if route is
+ not defined, is not typical
+-Default behavior for ever server, with asking for an undefined route, is to respond with 404 message
 
 
 *refer to streams-app/streams-client/src/components/App.js for different examples*
