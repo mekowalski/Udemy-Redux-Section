@@ -35,7 +35,7 @@ BAD NAVIGATION(normal operation of anchor tag)
 5. index.html file lists JS files in script tags: browser downloads and executes theses scripts
 6. the app starts up
 
--Every time <a /> is clicked, a new request is made for that document, every time that document needs to show
+-Every time <a /> is clicked, a new request is made for that document, every time that document is needed
 -There isn't any saving of the data needed
 
 -In addition to BrowserRouter and Route, pull in Link from react-router-dom
@@ -43,6 +43,7 @@ BAD NAVIGATION(normal operation of anchor tag)
 -Replace <a /> with <Link />
 -Replace href='' with to=''
 -When clicked, this Link will take the user `to` that route
+-When links are clicked, the application doesn't reload, along with no requests being made
 
 eg: App Component
 return (
@@ -50,7 +51,7 @@ return (
     Page One
     <Link to='/pagetwo'>Click Page2</Link>
   </div>
-)
+  )
 }
 
 const PageTwo = () => {
@@ -59,5 +60,16 @@ return (
     Page Two
     <Link to='/pageone'>Click Page1</Link>
   </div>
-)
+  )
 }
+
+-What's interesting is when the Link is inspected with the Element tag, it will show up as an <a /> tag!!!
+-When Link is used, an anchor component is still shown
+LINK NAVIGATION
+1. user navigates to another page in application
+2. user clicks on a 'Link' tag
+3. React Router prevents the browser from navigating to the new page & fetching the new index.html file
+4. URL still CHALLENGES
+5. 'History' sees the updated URL, take URL and sends it to BrowserRouter
+6. BrowserRouter communicates the URL to Route components
+7. Route components re-render to show new set of components
