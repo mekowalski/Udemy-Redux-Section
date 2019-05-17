@@ -12,5 +12,23 @@ eg: localhost:3000/#/pagetwo  (/#/pagetwo is used as path)
 
 3. MemoryRouter: Doesn't use the URL to track navigation
 eg: localhost:3000/
+-This doesn't update the path for the URL
+-After a Link is clicked, only localhost:3000 is present
+-Pressing Link 1 or Link 27 doesn't change URL whatsoever
+
+WHY IS THIS IMPORTANT
+-This comes down to deployment
+-BrowserRouter is most complicated to deploy inside any realistic setting
+-Deployment with BrowserRouter is fairly easy because a lot of 3rd deployment services understand something
+ like BrowserRouter will be used, therefore they will help take care of that
+
+What happens when making a request IF localhost:3000 is a TRADITIONAL SERVER (Java, Ruby, Python servers)
+1. Browser makes request to back-end server
+2. Back-end server would have logic inside of it to look at route where request is made for
+3a. Do I have route for /pageone
+3b. Yes, I am supposed to generate some HTML to send back
+3c. Respond with HTML document
+4. Server sends back the HTML document
+5. Content is displayed on the screen
 
 *refer to streams-app/streams-client/src/components/App.js for different examples*
