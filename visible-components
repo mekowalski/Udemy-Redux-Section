@@ -12,3 +12,9 @@ Current Hierarchy of Application
                  |                   |
             StreamList          StreamCreate
             Component             Component
+
+-Routes and Streams Components will be visible depending on the URL
+-Header and LoginButton will always be visible no matter what the URL is
+-Add Header Component to App Component outside of the BrowserRouter
+-If a component isn't listed inside the BrowserRouter, it will be always be shown 100% of the time
+ regardless of URL
