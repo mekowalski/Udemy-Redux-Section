@@ -43,3 +43,7 @@ Reconfigure Application Hierarchy
                          |                  |               |
                     StreamList        StreamCreate     LoginButton
                     Component           Component
+
+-App Component will render BrowserRouter as is
+-BUT NOW take Header component and move underneath BrowserRouter
+-Header still won't be wrapped inside a Route therefore it will still ALWAYS be visible
