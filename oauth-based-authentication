@@ -1,0 +1,6 @@
+OAuth-Based Authentication with Google OAuth2 Flow
+
+EMAIL/PASSWORD AUTH
+1. Store record in database with user's email and password
+2. When user tries to login, compare email/password with what's stored in database
+3. A user 'logs in' when they enter correct email/password
