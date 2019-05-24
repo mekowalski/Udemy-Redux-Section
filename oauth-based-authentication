@@ -11,3 +11,8 @@ OAUTH AUTHENTICATION
 3. Outside provider tells app about the user
 4. App decides to trust outside provider to correctly handle user identification
 5. OAuth can be used for (1) user ID in app and (2) app making actions on behalf of user
+
+HOW TO USE OAUTH FLOW TO MAKE ACTIONS ON BEHALF OF USER
+-Every time a user goes through OAuth Flow the App will ask about a list of 'scopes'
+-Scopes can be anything such as: email, profile, browser history, etc
+-Scope is also a permission the user grants the application
