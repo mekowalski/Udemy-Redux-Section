@@ -29,3 +29,17 @@ LINKS INSIDE ROUTER
   ie: a Link
 
 -If a Link is shown on any page that is outside the BrowserRouter, error L26 will occur
+-Essentially, a component that isn't a Child of a Router can't contain any React-Router related components
+
+
+Reconfigure Application Hierarchy
+                                              APP
+                                               |
+                                         BrowserRouter
+                          _____________________|____________
+                         |                  |               |
+                       route              route           Header
+                      path='/'     path='/streams/new'      |
+                         |                  |               |
+                    StreamList        StreamCreate     LoginButton
+                    Component           Component
