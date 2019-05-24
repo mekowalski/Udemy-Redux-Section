@@ -1,0 +1,14 @@
+Current Hierarchy of Application
+
+                                                APP
+                           ______________________|______________________
+                           |                                           |
+                      BrowserRouter                                  Header
+                           |                                           |
+                  _________|_________                                  |
+                 |                   |                                 |
+               route               route                          LoginButton
+              path='/'      path='/streans/new'
+                 |                   |
+            StreamList          StreamCreate
+            Component             Component
