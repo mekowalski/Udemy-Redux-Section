@@ -20,3 +20,12 @@ Current Hierarchy of Application
  regardless of URL
 
 -A Header is important for forming the basis of logging in/out of App
+
+
+LINKS INSIDE ROUTER
+-Error: Invariant failed: You should not use <Link> outside a <Router>
+-An exception to this rule is:
+  If outside, always-visible components contain any React Router related elements
+  ie: a Link
+
+-If a Link is shown on any page that is outside the BrowserRouter, error L26 will occur
