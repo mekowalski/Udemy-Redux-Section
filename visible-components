@@ -18,3 +18,5 @@ Current Hierarchy of Application
 -Add Header Component to App Component outside of the BrowserRouter
 -If a component isn't listed inside the BrowserRouter, it will be always be shown 100% of the time
  regardless of URL
+
+-A Header is important for forming the basis of logging in/out of App
