@@ -32,3 +32,19 @@ OAUTH FOR JS BROWSER APPS
 
 -Both approaches effectively have the same result
 -Overall, ask user to provide access to their data via third party provider
+
+
+FLOW FOR OAUTH
+                  User's Browser                                      Google's Servers
+                        |                                                     |
+        User clicks Login w/ Google button                                    |
+                        |                                                     |
+          Use Google's JS lib to initiate ------------------> Google's JS lib makes auth request
+                  OAuth process                                           to Google
+                        |                                                     |
+                        |                                     Google displays confirmation screen
+                        |                                       to user in their popup window
+                        |                                                     |
+                        |                                                User accepts
+                        |                                                     |
+        Google's JS lib invokes a CB in  <------------------------ Popup window closes
