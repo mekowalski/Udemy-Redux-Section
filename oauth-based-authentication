@@ -56,7 +56,7 @@ FLOW FOR OAUTH
 
 
 SETTING UP OAUTH
-1. Create ne project at console.developers.google.com/
+1. Create new project at console.developers.google.com/
 2. Set up OAuth confirmation screen
 3. Generate an OAuth Client ID
 4. Install Google's API library, initialize it with OAuth Client ID
