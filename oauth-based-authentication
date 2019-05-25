@@ -17,3 +17,9 @@ HOW TO USE OAUTH FLOW TO MAKE ACTIONS ON BEHALF OF USER
 -Scopes can be anything such as: email, profile, browser history, etc
 -Scope is also a permission the user grants the application
 -Google OAuth Scopes: developers.google.com/identity/protocols/googlescopes
+
+
+OAUTH FOR SERVERS
+1. Results in token that a server can use to make requests on behalf of the user
+2. Usually used when an app needs to access user data WHEN USER ISN'T LOGGED IN
+3. Difficult to setup because a lot of user information needs to be stored
