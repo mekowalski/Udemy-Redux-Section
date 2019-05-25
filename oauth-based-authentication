@@ -48,3 +48,8 @@ FLOW FOR OAUTH
                         |                                                User accepts
                         |                                                     |
         Google's JS lib invokes a CB in  <------------------------ Popup window closes
+                React/Redux app                                               |
+                        |                                                     |
+        CB provided with 'authorization'                                      |
+        token and profile info for user                                       |
+                        |                                                     |
