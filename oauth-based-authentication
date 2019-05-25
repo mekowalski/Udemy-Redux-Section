@@ -16,3 +16,4 @@ HOW TO USE OAUTH FLOW TO MAKE ACTIONS ON BEHALF OF USER
 -Every time a user goes through OAuth Flow the App will ask about a list of 'scopes'
 -Scopes can be anything such as: email, profile, browser history, etc
 -Scope is also a permission the user grants the application
+-Google OAuth Scopes: developers.google.com/identity/protocols/googlescopes
