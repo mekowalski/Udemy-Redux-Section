@@ -73,5 +73,15 @@ HOW GOOGLE API LIBRARY WORKS
 -In order to use gapi, have to first load up the JavaScript code related to the part of library for use
 eg: gapi => {load: f}  (single function called load)
   (load: load up internal lib by making followup request and fetching additional JS code)
-  
+
 -Then add 'load' to the Google library
+eg: gapi.load('client:auth2')
+-additional request made to fetch additional JS code and load it into the library
+
+-Then run gapi and additional properties will be present:
+  => {load: f, loaded_0: null, _:{...}, config: {...}, auth2: {...}, ...etc}
+
+-After loading additional library, initialize it with OAuth Client ID
+eg: gapi.client.init({ clientId: 'clientID' }) ('clientId' is not the actual correct value)
+
+-Will probably only want to load up the client portion, ONE TIME, when component is first rendered
