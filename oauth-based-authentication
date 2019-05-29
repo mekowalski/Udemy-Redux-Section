@@ -69,3 +69,9 @@ HOW GOOGLE API LIBRARY WORKS
 -Can also be used for all different types of Google services
 -gapi is well distributed across internet
 -Because many sites use this library, Google tries to keep this as small as possible
+
+-In order to use gapi, have to first load up the JavaScript code related to the part of library for use
+eg: gapi => {load: f}  (single function called load)
+  (load: load up internal lib by making followup request and fetching additional JS code)
+  
+-Then add 'load' to the Google library
