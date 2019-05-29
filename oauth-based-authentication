@@ -61,3 +61,11 @@ SETTING UP OAUTH
 3. Generate an OAuth Client ID
 4. Install Google's API library, initialize it with OAuth Client ID
 5. Make sure library gets called any time user clicks on 'Login w/ Google' button
+
+
+HOW GOOGLE API LIBRARY WORKS
+-gapi(within browser console) is a multi-purpose Google API library
+-Use it to interact with OAuth flow
+-Can also be used for all different types of Google services
+-gapi is well distributed across internet
+-Because many sites use this library, Google tries to keep this as small as possible
