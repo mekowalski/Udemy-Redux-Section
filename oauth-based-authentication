@@ -85,3 +85,9 @@ eg: gapi.load('client:auth2')
 eg: gapi.client.init({ clientId: 'clientID' }) ('clientId' is not the actual correct value)
 
 -Will probably only want to load up the client portion, ONE TIME, when component is first rendered
+
+
+UPDATE AUTH STATE
+-Method on prototype for `.isSignedIn` called listen: f(a), (can pass a callback function to)
+-Passing a CB() to listen: f(a) will invoke anytime the user's auth status is changed
+-Can pass a callback and maybe call setState inside the function and this will help update text in header
