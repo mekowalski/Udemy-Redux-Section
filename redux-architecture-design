@@ -45,3 +45,8 @@ FIRST: Leave GoogleAuth Component untouched
  etc, just to get simple boolean back into component
  BASICALLY: REMOVE A PIECE OF DATA ALREADY IN COMPONENT INTO TO ANOTHER LOCATION THAT IS HARDER TO ACCESS
  JUST TO GET IT BACK INSIDE THE COMPONENT
+
+
+SECOND: Spreads a lot of auth logic out all over Application
+-Follows more closely to Redux conventions
+-To reference GoogleAuth in future, it would be harder to figure out the entire flow
