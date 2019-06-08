@@ -33,3 +33,15 @@ FIRST: Leave GoogleAuth Component untouched
   -This makes it difficult to use when other components will need to act based upon user auth status
   -Need to have the FACT of user auth status centrally located inside app
   -Having the status in GoogleAuth is not centrally available
+
+-This will lead to some odd actions through, reflecting user auth status everywhere is not ideal
+-Only reflect status in one part, in Redux Store
+-The side effect is that GoogleAuth needs to show Google Sign In/Out button which is dependent on user auth
+ status
+-Need to make user Redux Store communicates auth status as a Prop through mapStateToProps() in GoogleAuth
+
+-Currently GoogleAuth has component-level state
+-Essentially this state will be taken and move it to Reducer then go through connect(), mapStateToProps()
+ etc, just to get simple boolean back into component
+ BASICALLY: REMOVE A PIECE OF DATA ALREADY IN COMPONENT INTO TO ANOTHER LOCATION THAT IS HARDER TO ACCESS
+ JUST TO GET IT BACK INSIDE THE COMPONENT
