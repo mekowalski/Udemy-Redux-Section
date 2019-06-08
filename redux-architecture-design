@@ -23,3 +23,13 @@ FIRST: Leave GoogleAuth Component untouched
 2. GAPI Auth2 library will call onAuthChange() inside class/component
 3. In order to integrate Redux into this flow, make sure anytime onAuthChange() is called, call appropriate
    Action Creators: signIn() or signOut()
+  a. Action Creators will be called anytime the user successfully signs in/out
+  b. These Action Creators will return an Action that will show up inside a new Reducer(AuthReducer)
+4. AuthReducer will, probably be an object, that will hold a simple boolean value, reflecting whether user
+   is signed in/out
+
+-Why reflect whether user is signed in/out in Redux Store when it's already recorded inside GoogleAuth comp
+-Simple: currently only GoogleAuth component knows user auth status
+  -This makes it difficult to use when other components will need to act based upon user auth status
+  -Need to have the FACT of user auth status centrally located inside app
+  -Having the status in GoogleAuth is not centrally available
