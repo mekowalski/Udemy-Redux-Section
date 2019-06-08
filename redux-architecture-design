@@ -50,3 +50,12 @@ FIRST: Leave GoogleAuth Component untouched
 SECOND: Spreads a lot of auth logic out all over Application
 -Follows more closely to Redux conventions
 -To reference GoogleAuth in future, it would be harder to figure out the entire flow
+
+         _________________________________________________________
+        |                                                         |
+    Redux Store                 Action Creators                   |
+        |                             |                      GoogleAuth
+    Auth State   <------------   changeAuth()                 Component
+                |---------------------^                           |
+    GAPI Auth2 _|  <----------   trySignIn() <------------ onSignInClick()
+        ^---------------------   trySignOut() <---------- onSignOutClick()
