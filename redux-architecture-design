@@ -5,3 +5,14 @@ FIRST: Leave GoogleAuth Component untouched
 -Not following closely the conventions of Redux
 -Therefore not common or best approach
 -This will help the Component show the entire Google OAuth process from start to finish
+
+                                                            GoogleAuth
+                                                            Component
+                                                                |
+      Redux Store                Action Creator           onSignInClick()   ----------->
+          |                            |                  onSignOutClick()  ------------|
+      Auth State <------------------ signIn() <------------ onAuthChange()   <------ GAPI Auth2
+           ^---------------------- signOut() <---------------|  ^
+          |                                                     |
+          |_____________________________________________________|
+                        isSignedIn: true/false
