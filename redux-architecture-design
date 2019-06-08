@@ -16,3 +16,10 @@ FIRST: Leave GoogleAuth Component untouched
           |                                                     |
           |_____________________________________________________|
                         isSignedIn: true/false
+
+1. GoogleAuth Component: onSignOutClick(), onSignInClick() and onAuthChange() methods
+  a. Whenever onSignInClick() and onSignOutClick() are called, essentially access the GAPI Auth2 instance
+  b. This will begin the signIn flow or signOut flow
+2. GAPI Auth2 library will call onAuthChange() inside class/component
+3. In order to integrate Redux into this flow, make sure anytime onAuthChange() is called, call appropriate
+   Action Creators: signIn() or signOut()
