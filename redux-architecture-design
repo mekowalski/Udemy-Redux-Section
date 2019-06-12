@@ -50,6 +50,7 @@ FIRST: Leave GoogleAuth Component untouched
 SECOND: Spreads a lot of auth logic out all over Application
 -Follows more closely to Redux conventions
 -To reference GoogleAuth in future, it would be harder to figure out the entire flow
+-Always want Action Creators responsible for changing State of Application (AC manage access to GAPI Auth2)
 
          _________________________________________________________
         |                                                         |
@@ -59,3 +60,12 @@ SECOND: Spreads a lot of auth logic out all over Application
                 |---------------------^                           |
     GAPI Auth2 _|  <----------   trySignIn() <------------ onSignInClick()
         ^---------------------   trySignOut() <---------- onSignOutClick()
+
+1. GoogleAuth Component: Still have callback functions
+  a. Anytime one of the callbacks functions is invoked, an Action Creator would be called
+  b. trySignIn(), trySignOut(), attempt to sign user in/out, beginning authentication process
+2. Action Creators would call the GAPI Auth2 library
+  a. With trySignIn()/trySignOUt() function called, GAPI will call a callback function
+  b. changeAuth(), similar to onAuthChange()
+3. changeAuth() would Dispatch an Action and update Auth State
+4. Redux Store would communicate with GoogleAuth comp on whether user is signed in/out via mapStateToProps
