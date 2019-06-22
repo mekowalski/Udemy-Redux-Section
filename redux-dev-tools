@@ -6,3 +6,11 @@ Redux DevTools Extension
 -After installation(either with Chrome or Firefox), need to add a tiny bit up code in application to hook
  it up to Redux DevTools
 -Import `compose`, `middleware` and all the green code from `1.2 Advanced store setup`
+
+-The satellite icon for Redux DevTools will be present after connection
+-Once icon is clicked it will display a grey-blue screen of inspecting the current application in the browser
+-Two features that are frequently used with DevTools:
+  1. State: shows current State inside Redux Store
+  2. Left panel: list of all different actions that have been dispatched to Redux Store
+    -Keeps track of the actions that have been dispatched(like a time line activity)
+    -`jump` reflects the State inside of Store at that point in time, in the right panel
