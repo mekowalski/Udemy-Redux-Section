@@ -1,2 +1,8 @@
 Redux DevTools Extension
 -Chrome extension used for easily debugging Redux Store
+-Helpful for using Redux Form, which is a bit tricky to work with
+-Link: github.com/zalmoxisus/redux-devtools-extension
+
+-After installation(either with Chrome or Firefox), need to add a tiny bit up code in application to hook
+ it up to Redux DevTools
+-Import `compose`, `middleware` and all the green code from `1.2 Advanced store setup`
