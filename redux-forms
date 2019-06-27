@@ -20,6 +20,10 @@ REDUX FORMS
 REDUX FORM AUTOMATION
 -Handling inputs with Redux Form
 -RF does a lot of the input handling because it is very repetitive
+-RF will be wired up to a Reducer, not written, this is included in Redux library
+-That included Reducer will be wired up to the Store
+-Won't write any mapStateToProps(), RF will automatically do this
+-Action Creators won;t be written either, RF will automatically do this
 ***RF = redux form***
 
   REDUX STORE                             COMPONENT                       DOM    ___________
@@ -34,3 +38,7 @@ REDUX FORM AUTOMATION
   4. That Props object with all its different values and pass them into DOM input elements as values
   5. Any time a user makes change to an element, have CB handler inside Component
   6. The CB handler will call an Action Creator and try to update the Form Data within Store
+
+-Main thing to do is get some Form information, down into an input element
+-And make sure that input element knows that it needs to call a CB handler anytime it gets changed
+-This is still all making use of Redux system, but done all automatically via RF
