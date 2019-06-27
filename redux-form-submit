@@ -2,3 +2,13 @@ HANDLING FORM SUBMISSION
 -Common practice of using `event.preventDefault()` to keep the browser from refreshing when form is being
  submitted to a back end server
 -Now that RF is being used, there is a bit of different actions
+
+-console.log(this.props) => In browser console, returns a lot of properties, one being handleSubmit
+-handleSubmit() is a function that is supposed to be called any time the form is submitted
+  eg: StreamCreate Form
+  <form obSubmit={this.onSubmit} className='ui form'>
+
+***to onSubmit, usually pass in the onSubmit() CB***
+
+
+-Now that RF is used, there is a different approach
