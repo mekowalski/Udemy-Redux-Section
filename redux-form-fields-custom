@@ -24,3 +24,13 @@ CUSTOMIZING FORM FIELDS
   eg: Field props
   <Field name='title' component={this.renderInput} label='Enter Title' />
   <Field name='title' component={this.renderInput} label='Enter Description' />
+
+
+-Any time a prop is added to Field component, RF will see a passed prop that it doesn't know what to do with
+-Field element has NO idea what to do with a label prop
+-Therefore, by default, the Field element will take the label prop and pass it through renderInput()
+-This is HOW to customize renderInput() whenever it gets called
+-renderInput() will receive label as an additional property on first argument
+  eg: renderInput()
+  renderInput(formProps, label) {
+    return (
