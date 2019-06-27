@@ -3,3 +3,10 @@ REDUX FORMS
   1. Many developers believe it's challenging to understand
   2. Though it does a ton of stuff automatically, making programming a bit easier,
      compared to putting all the different forms together by hand & integrate Redux
+
+-Current project(streams-app) has used Class Components which has used component-level State
+-This cycle went on and on and over again
+  1. State object recorded current value of an element
+  2. That value was taken out and pushed into the input element inside DOM(tell input what its value was)
+  3. Whenever a user changed that text, onChange CB was called
+  4. onChange CB would called setState method and update component-level State
