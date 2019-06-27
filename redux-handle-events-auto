@@ -4,8 +4,26 @@ AUTOMATICALLY HANDLING EVENTS
 
 -Need to assign a prop, called component, to Field in order to show actual text on screen
 -Either a React component or a function for Field to call
--This component needs to return some element toa actually be shown on screen
+-This component needs to return some element to actually be shown on screen
   eg: <Field name='title' component={} />
 
 ***All about hooking up infrastructure of Store to mapStateToProps to Props to Handler to Action Creator
 back to Store cycle***
+
+-Lesson to learn:
+  1. Redux Form is all about automating the entire process(handling inputs)
+  2. EOD, RF doesn't really know a lot about what's being done
+    -Doesn't know if a text input it showing, or if a dropdown/checkbox is being shown
+    -RF will assume I (developer) is doing the right thing
+  3. In order to do the correct 'thing', supposed to return an input element via helper method passed to
+    component prop in Field
+    eg: helper mehthod
+    renderInput() {
+      return (
+        <div>
+          this is an INPUT
+        </div>
+      )
+    }
+
+    <Field name='title' component={this.renderInput} />
