@@ -1,3 +1,18 @@
 CUSTOMIZING FORM FIELDS
 -Currently the input that is shown on the screen is very BLAND and UGLY
 -No label, inputs are right next to each other, not informative enough for use to know what's going on
+-Rather than just returning a Text Input, return an entire blob of JSX(different elements)
+  eg: renderInput()
+  renderInput(formProps) {
+    return (
+      <div className='field'>
+        <label></label>
+        <input
+          onChange={formProps.input.onChange}
+          value={formProps.input.value}
+        />
+      <div>
+    )
+  }
+
+  ***label for telling user what the input actually represents***
