@@ -18,3 +18,10 @@ REDUX FORMS
 
 
 REDUX FORM AUTOMATION
+-Handling inputs with Redux Form
+***RF = redux form***
+
+  REDUX STORE                             COMPONENT                       DOM    ___________
+   Redux ------> RF mapStateToProps --->    Props   ------------------>  value   | Input   |
+    Form                                                                         | Element |
+  Reducer <------ RF Action Creator <---   Handler  <------------------ onChange |_________|
