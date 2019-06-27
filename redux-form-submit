@@ -1,0 +1,4 @@
+HANDLING FORM SUBMISSION
+-Common practice of using `event.preventDefault()` to keep the browser from refreshing when form is being
+ submitted to a back end server
+-Now that RF is being used, there is a bit of different actions
