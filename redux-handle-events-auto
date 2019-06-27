@@ -52,3 +52,25 @@ RETURN: {input: input, meta} x2
       />
     )
   }
+
+
+NEW SYNTAX
+eg: renderInput
+renderInput(formProps) {
+  return <input {...formProps.input} />
+}
+
+-Takes formProps input property(an object, value and onChange props), takes key-value pairs and adds them
+ as properties to the Input element
+ !!!!!!Things are just clicking for me right here!!!!!!
+
+
+EVEN MORE REFACTORED SYNTAX
+-Destructure input argument out of formProps object
+eg: renderInput
+renderInput({ input }) {
+  return <input {...input} />
+}
+
+-Any time RF is used, always use a syntax for input element properties, BECAUSE there are always other
+ properties inside input object that RF cares about
