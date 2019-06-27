@@ -1,4 +1,4 @@
-Redux DevTools Extension
+REDUX DEVTOOLS EXTENSION
 -Chrome extension used for easily debugging Redux Store
 -Helpful for using Redux Form, which is a bit tricky to work with
 -Link: github.com/zalmoxisus/redux-devtools-extension
@@ -14,3 +14,11 @@ Redux DevTools Extension
   2. Left panel: list of all different actions that have been dispatched to Redux Store
     -Keeps track of the actions that have been dispatched(like a time line activity)
     -`jump` reflects the State inside of Store at that point in time, in the right panel
+
+
+DEBUG WITH REDUX DEVTOOLS
+-When the application is running on the browser, go here:
+localhost:3000?debug_session=<some_string>
+
+-Redux DT will see that a debug session is trying to start
+-Redux DT will then, automatically save all the data inside the Redux Store and persist it across refreshes
