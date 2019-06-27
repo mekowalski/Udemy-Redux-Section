@@ -42,3 +42,9 @@ REDUX FORM AUTOMATION
 -Main thing to do is get some Form information, down into an input element
 -And make sure that input element knows that it needs to call a CB handler anytime it gets changed
 -This is still all making use of Redux system, but done all automatically via RF
+
+
+REDUX FORM DOCUMENTATION - EXAMPLES
+-Link: redux-form.com
+-Examples tab: list of form types that may be used in application
+  eg: simple form, validation, initializing Form from State, selecting, wizard form
