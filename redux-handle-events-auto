@@ -25,3 +25,21 @@ back to Store cycle***
     }
 
     <Field name='title' component={this.renderInput} />
+
+-Anytime an Input Element is shown with React(in any capacity), always show Input Element and assign its
+ value property and give it an onChange CB handler
+ ***a controlled element***
+
+-To create a controlled element, any time a Field tag calls the helper method, it will pass a number of
+ arguments
+ eg: renderInput()
+ renderInput(formProps) {
+   return <input />
+ }
+
+RETURN: {input: input, meta} x2
+-input > input: familiar event handlers(onChange, onFocus, etc) and value
+
+-RF wires all the input handling
+-My job is to make last connection, take onChange handler and wire it to Input Element
+-Also my job is to take value Prop and hook it up to Input Element
