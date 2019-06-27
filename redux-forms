@@ -19,9 +19,18 @@ REDUX FORMS
 
 REDUX FORM AUTOMATION
 -Handling inputs with Redux Form
+-RF does a lot of the input handling because it is very repetitive
 ***RF = redux form***
 
   REDUX STORE                             COMPONENT                       DOM    ___________
    Redux ------> RF mapStateToProps --->    Props   ------------------>  value   | Input   |
     Form                                                                         | Element |
   Reducer <------ RF Action Creator <---   Handler  <------------------ onChange |_________|
+  |--------- RF does this automatically ---------|
+
+  1. May have input element on far right-hand side, which is assigned: value & onChange handler
+  2. A Reducer will hold all State of different forms within application (value, dropdown select, etc)
+  3. In order to get date from Store into DOM input element, have mapStateToProps
+  4. That Props object with all its different values and pass them into DOM input elements as values
+  5. Any time a user makes change to an element, have CB handler inside Component
+  6. The CB handler will call an Action Creator and try to update the Form Data within Store
