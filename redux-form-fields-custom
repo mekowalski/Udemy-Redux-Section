@@ -16,3 +16,11 @@ CUSTOMIZING FORM FIELDS
   }
 
   ***label for telling user what the input actually represents***
+
+
+-renderInput() is called twice(title, description)
+-When label is used, need to make sure to associate which Field is being worked on
+-To get that appropriate Field, add a new prop to both Field elements
+  eg: Field props
+  <Field name='title' component={this.renderInput} label='Enter Title' />
+  <Field name='title' component={this.renderInput} label='Enter Description' />
