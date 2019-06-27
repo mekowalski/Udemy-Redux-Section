@@ -1,3 +1,11 @@
 AUTOMATICALLY HANDLING EVENTS
 -Field component itself doesn't actually know how show a text input
  (or dropdown, checkbox or any type of form element)
+
+-Need to assign a prop, called component, to Field in order to show actual text on screen
+-Either a React component or a function for Field to call
+-This component needs to return some element toa actually be shown on screen
+  eg: <Field name='title' component={} />
+
+***All about hooking up infrastructure of Store to mapStateToProps to Props to Handler to Action Creator
+back to Store cycle***
