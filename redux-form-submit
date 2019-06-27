@@ -27,3 +27,11 @@ HANDLING FORM SUBMISSION
  2 Field inputs (something like formProps)
 -formProps does not mean that it's some data passed down from the parent component, a better name may be
  formValues
+-No longer is an event object being dealt with, because now the value of the form is present
+-Event object isn't useful, it mainly was helpful for preventing default
+
+-Now rather than onSubmit() getting useless event object, it will be called with the values out of the Form
+-It will now be easy to take the Form values and save them on an API or validate them, etc
+
+-When browser is refreshed, when clicking submit button, the Form will still submit without attributes
+-This shouldn't be the case, text inputs should be validated
