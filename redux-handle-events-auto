@@ -1,0 +1,3 @@
+AUTOMATICALLY HANDLING EVENTS
+-Field component itself doesn't actually know how show a text input
+ (or dropdown, checkbox or any type of form element)
