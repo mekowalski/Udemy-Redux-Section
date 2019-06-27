@@ -22,3 +22,12 @@ localhost:3000?debug_session=<some_string>
 
 -Redux DT will see that a debug session is trying to start
 -Redux DT will then, automatically save all the data inside the Redux Store and persist it across refreshes
+-Normally when application is refreshed, all the Redux Store data goes away, lost entirely
+-This is useful for advanced feature development
+
+-Once a debug session is done, remove the tag after localhost:3000
+-Otherwise, Redux DT will continually throw the previous State into the Store
+-This isn't helpful, particularly if a Reducer is changed to return another part of data
+  eg: array instead of an object
+-Continually running debug session will give errors because Redux DT is trying to throw data into the Store
+ that is no longer valid
