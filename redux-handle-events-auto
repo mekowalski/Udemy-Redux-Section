@@ -20,9 +20,7 @@ back to Store cycle***
     eg: helper mehthod
     renderInput() {
       return (
-        <div>
-          this is an INPUT
-        </div>
+        <input />
       )
     }
 
