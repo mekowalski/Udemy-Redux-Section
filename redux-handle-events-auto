@@ -43,3 +43,12 @@ RETURN: {input: input, meta} x2
 -RF wires all the input handling
 -My job is to make last connection, take onChange handler and wire it to Input Element
 -Also my job is to take value Prop and hook it up to Input Element
+  eg: hook up to value and handler to Input Element
+  renderInput(formProps) {
+    return (
+      <input
+        onChange={formProps.input.onChange}
+        value={formProps.input.value}
+      />
+    )
+  }
