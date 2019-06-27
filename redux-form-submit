@@ -13,7 +13,7 @@ HANDLING FORM SUBMISSION
 
 -Now that RF is used, there is a different approach
   eg: StreamCreate Form
-  <form obSubmit={this.props.handleSubmit(this.onSubmit)} className='ui form'>
+  <form onSubmit={this.props.handleSubmit(this.onSubmit)} className='ui form'>
 
 1. onSubmit: name of prop passed to Form
 2. this.props.handleSubmit(): CB function provided to component by RF
@@ -24,4 +24,6 @@ HANDLING FORM SUBMISSION
 -Therefore .preventDefault() doesn't need to be done anymore
 
 -onSubmit also WILL NOT be called with an event object, it will be called with the value existed inside the
- 2 Field inputs (something like fromProps)
+ 2 Field inputs (something like formProps)
+-formProps does not mean that it's some data passed down from the parent component, a better name may be
+ formValues
