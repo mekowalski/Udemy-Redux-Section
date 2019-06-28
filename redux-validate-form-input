@@ -7,3 +7,19 @@ VALIDATION OF FORM INPUTS
 -Handling validations with Redux Forms is both hard and easy
 -Hard: a few moving pieces and a little bit of "magic"
 -Easy: as long as the pattern is learned, doing validations is quick
+
+
+VALIDATION PROCESS DIAGRAM
+-Form is going to be validated by Redux Form almost every millisecond of the day
+-Essentially every single time the Form is rendered on screen
+-And every single time the user interacts with the Form
+
+                        Form is initially rendered OR user interacts with it
+                                                |
+                                                |Validate function gets called with
+                                                |all values from the Form
+                                                |
+                                      validate(formValues)
+                                                |
+                                                |
+                                      Did user enter valid
