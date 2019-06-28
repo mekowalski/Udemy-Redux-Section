@@ -13,13 +13,15 @@ VALIDATION PROCESS DIAGRAM
 -Form is going to be validated by Redux Form almost every millisecond of the day
 -Essentially every single time the Form is rendered on screen
 -And every single time the user interacts with the Form
+***refer to streams-app***
 
                         Form is initially rendered OR user interacts with it
                                                 |
-                                                |Validate function gets called with
-                                                |all values from the Form
+                                                | Validate function gets called with
+                                                | all values from the Form
                                                 |
-                                      validate(formValues)
+                                      validate(formValues)   *validate() will be defined by me*
                                                 |
                                                 |
-                                      Did user enter valid
+                                          Did user enter
+                                          valid inputs?
