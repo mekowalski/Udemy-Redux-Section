@@ -34,3 +34,10 @@ VALIDATION PROCESS DIAGRAM
                       *makes redux from think         a KV pair on the object with
                       *the form is valid              NAME of field and error message
                                                       (errors = {title: 'You must enter a title'})
+                                                            |
+                                                      Redux Form automatically
+                                                      re-renders component
+                                                            |
+                                                      RF will look at every Field component
+                                                      that gets rendered. Each Field name
+                                                      property.
