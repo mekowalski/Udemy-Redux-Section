@@ -25,3 +25,8 @@ VALIDATION PROCESS DIAGRAM
                                                 |
                                           Did user enter
                                           valid inputs?
+                                       _________|_________
+                                       |                 |
+                                      Yes               No
+                                       |                 |
+                                Return an             Return an object.
