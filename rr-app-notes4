@@ -110,3 +110,14 @@ CREATING STREAMS - ARCHITECTURE OF PROJECT
  a streamer
 -How to communicate from React application to API Server and tell the server there is a new Stream
  available for viewing???
+
+
+                                              API Server
+                                        {id: 1, title: 'First',
+                                      description: 'First Stream'}
+                                        {id: 2, title: 'Two',        ______
+                                      description: 'Second Stream'}       |
+                                                  ^                       |
+Streamer's Computer                               |                       ---------> React App
+        OBS                                      RTMP                               (create/browse)
+        |---I'm creating stream id: 2--->       Server      <---Show stream id: 2------|
