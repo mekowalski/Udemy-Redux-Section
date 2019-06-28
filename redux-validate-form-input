@@ -33,3 +33,4 @@ VALIDATION PROCESS DIAGRAM
                       *Returning empty object         For reach invalid field, put
                       *makes redux from think         a KV pair on the object with
                       *the form is valid              NAME of field and error message
+                                                      (errors = {title: 'You must enter a title'})
