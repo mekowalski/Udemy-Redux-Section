@@ -1,2 +1,9 @@
 VALIDATION OF FORM INPUTS
 -Want to always ensure that a user will enter value into a Form Input
+-This process of making sure input is entered is Validation
+-Validation can be used to check for any type of element form
+  eg: phone number format, email format, text format of string, etc
+
+-Handling validations with Redux Forms is both hard and easy
+-Hard: a few moving pieces and a little bit of "magic"
+-Easy: as long as the pattern is learned, doing validations is quick
