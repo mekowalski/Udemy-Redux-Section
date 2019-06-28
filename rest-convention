@@ -1,2 +1,10 @@
 REST CONVENTIONS
 -Standardized system for designing APIs
+
+      ACTION        |       METHOD        |      ROUTE
+____________________|_____________________|_________________
+    Records List    |         GET         |     /records
+  Specific record   |         GET         |   /records/:id
+    Create record   |        POST         |     /records
+    Update record   |         PUT         |   /records/:id
+    Delete record   |       DELETE        |   /streams/:id
