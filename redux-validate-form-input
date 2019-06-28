@@ -25,8 +25,11 @@ VALIDATION PROCESS DIAGRAM
                                                 |
                                           Did user enter
                                           valid inputs?
-                                       _________|_________
-                                       |                 |
-                                      Yes               No
-                                       |                 |
-                                Return an             Return an object.
+                                    ____________|____________
+                                    |                       |
+                                   Yes                      No
+                                    |                       |
+                      Return an empty object          Return an object.
+                      *Returning empty object         For reach invalid field, put
+                      *makes redux from think         a KV pair on the object with
+                      *the form is valid              NAME of field and error message
