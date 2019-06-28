@@ -129,3 +129,9 @@ Streamer's Computer                               |                       ------
 2. Take list of streams from API Server and send it down to React app and show on screen
 3. When user selects a stream, the React app reaches out to RTMP asking for that specific stream
 4. RTMP will take whatever stream of a specific ID that's coming in & stream that video to React app
+
+***In the end, what's really happening is the task of taking a record from API Server and post it, via
+a network request up to API Server***
+
+-What is the API Server?
+-This is what to put together myself
