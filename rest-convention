@@ -15,3 +15,6 @@ ____________________|_____________________|_________________
      server
   2. if API server follows RESTful conventions, then the API server should return an array of records
      it holds
+  ***Same process for all actions with respective results***
+
+-JSONServer, strictly adheres to REST conventions

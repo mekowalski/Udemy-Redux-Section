@@ -135,3 +135,10 @@ a network request up to API Server***
 
 -What is the API Server?
 -This is what to put together myself
+
+
+062918
+SET UP API SERVER
+-New DIR for streams-api within streams-app folder
+-Use JSON Server for API
+-This folder will hold all code related to JSON/API Server
