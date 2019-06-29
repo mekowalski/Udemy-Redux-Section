@@ -8,3 +8,10 @@ ____________________|_____________________|_________________
     Create record   |        POST         |     /records
     Update record   |         PUT         |   /records/:id
     Delete record   |       DELETE        |   /streams/:id
+
+-System of Routes and Request Methods used to operate different Actions
+  eg:
+  1. to make a list of records appear on screen, make a GET request the to Route /records on the API
+     server
+  2. if API server follows RESTful conventions, then the API server should return an array of records
+     it holds
