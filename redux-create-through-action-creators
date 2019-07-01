@@ -21,3 +21,11 @@ Step TWO:
   export default axios.create({
     baseURL: 'localhost:3001'  //this is the home URL that was made when i created the external API
   })
+
+-Import Axios instance into actions/index.js
+  eg: actions/index.js
+  import records from '../apis/records';
+  //other imports
+
+  //other export consts
+  //other export consts
