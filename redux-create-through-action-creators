@@ -58,3 +58,13 @@ Step FOUR:
       records.post('/records', formValues)
     }
   }
+
+
+Step FIVE:
+-Make sure to successfully create new record on the API
+-Import connect() and Action Creator (which will be a tad bit complicated)
+  eg: RecordCreate component
+  //other imports
+  //other imports
+  import { connect } from 'react-redux';
+  import { createRecord } from '../../actions'; //action creator
