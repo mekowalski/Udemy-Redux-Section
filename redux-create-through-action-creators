@@ -35,11 +35,26 @@ Step THREE:
 -Create new Action Creator to create/handle the new record
 -Called with a list of values entered into Form, as argument
 -Define async action creator, making use of redux-thunk
+-Return arrow () with dispatch as 1st argument, and use with async
   eg: actions/index.js
   //import statements
 
   //other export consts
 
   export const createRecord = (formValues) => {
-    
+    return async (dispatch) => {
+
+    }
+  }
+
+
+Step FOUR:
+-Finally make POST request to the endpost at the baseURL API
+-Putting in all the different properties in formValues
+-('/records', formValues)
+  eg: createRecord()
+  export const createRecord = (formValues) => {
+    return async (dispatch) => {
+      records.post('/records', formValues)
+    }
   }
