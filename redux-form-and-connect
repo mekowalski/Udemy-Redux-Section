@@ -18,3 +18,12 @@ Step ONE: Current StreamCreate.js
     form: 'streamCreate',
     validate
   })(StreamCreate)
+
+
+Step TWO:
+-Create new "wrapped" variable to stack functions
+  eg: reduxForm()
+  const formWrapped = reduxForm({
+    form: 'streamCreate',
+    validate
+  })(StreamCreate)
