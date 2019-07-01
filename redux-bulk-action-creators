@@ -7,3 +7,8 @@ FOLLOWING RESTFUL CONVENTIONS INSIDE APPLICATION
       Create record   |        POST         |     /records     | Single record
       Update record   |         PUT         |   /records/:id   | Single record
       Delete record   |       DELETE        |   /streams/:id   | Nothing
+
+-The response is what the API Server returns when a request is made to it
+-If RESTful convention is truly being followed, the response is pretty predictable
+-Although there isn't a Component to show a list of records, edit a record, delete a record, then all Action
+ Creators can be created altogether, when RESTful convention is followed
