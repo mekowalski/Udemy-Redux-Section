@@ -27,3 +27,9 @@ Step TWO:
     form: 'streamCreate',
     validate
   })(StreamCreate)
+
+
+Step Three:
+-export default statement with connect()
+  eg: connect()
+  export default connect()(formWrapped)
