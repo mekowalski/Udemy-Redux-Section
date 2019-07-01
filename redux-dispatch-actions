@@ -1,2 +1,18 @@
 HANDLE THE RESPONSE COMING BACK FROM POST(method) REQUEST
+
 -The response contains the actual saved record of creation
+  eg: actions/createStream (ORIGINAL)
+  export const createStream = (formValues) => {
+    return async (dispatch) => {
+      streams.post('/streams', formValues)
+    }
+  }
+
+
+-Handle on the stream that was just created
+  eg: actions/createStream (MODIFIED)
+  export const createStream = (formValues) => {
+    return async (dispatch) => {
+      const response = await streams.post('/streams', formValues)
+    }
+  }
