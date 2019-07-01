@@ -26,3 +26,10 @@ Step ONE:
   //constant type
   //constant type
   export const CREATE_STREAM = 'CREATE_STREAM';
+
+
+Step TWO:
+-Import new constant type into actions/index.js
+  eg: actions/index.js
+  //import statement
+> import { SIGN_IN, SIGN_OUT, CREATE_STREAM } from './types'
