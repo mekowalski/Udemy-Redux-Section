@@ -1,0 +1,9 @@
+FOLLOWING RESTFUL CONVENTIONS INSIDE APPLICATION
+
+        ACTION        |       METHOD        |      ROUTE       |      RESPONSE
+  ____________________|_____________________|__________________|____________________
+      Records List    |         GET         |     /records     | Array of records
+    Specific record   |         GET         |   /records/:id   | Single record
+      Create record   |        POST         |     /records     | Single record
+      Update record   |         PUT         |   /records/:id   | Single record
+      Delete record   |       DELETE        |   /streams/:id   | Nothing
