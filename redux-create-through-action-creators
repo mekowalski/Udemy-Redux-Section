@@ -9,3 +9,15 @@ Step ONE:
 -In React App, install Axios and Redux-Thunk
 -Both are used to write async Action Creator
   eg: install --save axios redux-thunk
+
+
+Step TWO:
+-Create new DIR: apis with File: (whatever name)
+  eg: apis/records.js
+-Create Axios instance
+  eg: records.js
+  import axios from 'axios';
+
+  export default axios.create({
+    baseURL: 'localhost:3001'  //this is the home URL that was made when i created the external API
+  })
