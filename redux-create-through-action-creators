@@ -4,3 +4,8 @@ CREATE A RECORD THROUGH ACTION CREATORS
 2. Wire up Action Creator to Component via connect() helper
 3. Call Action Creator from onSubmit() method
 4. Action Creator will use Axios to make network request to API
+
+Step ONE:
+-In React App, install Axios and Redux-Thunk
+-Both are used to write async Action Creator
+  eg: install --save axios redux-thunk
