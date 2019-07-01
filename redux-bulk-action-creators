@@ -42,11 +42,22 @@ Step THREE:
 -Create an Action Creator for the respective action type
 -Arrow function that returns a thunk function
 -Inside, follow the REST convention
-  eg: actions/index.js
+
+
+  eg: FETCH_STREAMS(ALL), actions/index.js
   export const fetchStreams = () => {
     return async dispatch => {
       const response = await streams.get('/streams')
 
       dispatch({ type: FETCH_STREAMS, payload: response.data })
+    }
+  }
+
+  eg: FETCH_STREAM(SINGLE w/ ID), actions/index.js
+  export const fetchStream = (id) => {
+    return async (dispatch) => {
+      const response = await streams.get(`/streams/${id}`)
+
+      dispatch({ type: FETCH_STREAM, payload: response.data })
     }
   }
