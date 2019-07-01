@@ -67,4 +67,4 @@ Step FIVE:
   //other imports
   //other imports
   import { connect } from 'react-redux';
-  import { createRecord } from '../../actions'; //action creator
+  import { createRecord } from '../../actions';   //action creator
