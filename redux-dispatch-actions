@@ -16,3 +16,13 @@ HANDLE THE RESPONSE COMING BACK FROM POST(method) REQUEST
       const response = await streams.post('/streams', formValues)
     }
   }
+
+
+DISPATCH AN ACTION WITH A PAYLOAD OF THE RESPONSE
+
+Step ONE:
+-Need to have a new, constant type
+  eg: actions/types.js
+  //constant type
+  //constant type
+  export const CREATE_STREAM = 'CREATE_STREAM';
