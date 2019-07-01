@@ -1,2 +1,6 @@
 CREATE A RECORD THROUGH ACTION CREATORS
 -Any time a user submits a Form, need to attempt making a network request over to API(that i created)
+1. Define Action Creator in order to make network request
+2. Wire up Action Creator to Component via connect() helper
+3. Call Action Creator from onSubmit() method
+4. Action Creator will use Axios to make network request to API
