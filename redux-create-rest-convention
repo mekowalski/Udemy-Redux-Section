@@ -1,1 +1,13 @@
 CREATE A RECORD WITH REST CONVENTION
+
+-Current connect():
+export default connect(null, { createStream })(formWrapped)
+
+-mapStateToProps is not yet defined
+
+-Inside Component, within the handler
+-Whenever a user submits a Form, make sure to call action creator with all form values
+  eg: onSubmit()
+  onSubmit(formValues) {
+    this.props.createStream(formValues)
+  }
