@@ -29,3 +29,17 @@ Step TWO:
 
   //other export consts
   //other export consts
+
+
+Step THREE:
+-Create new Action Creator to create/handle the new record
+-Called with a list of values entered into Form, as argument
+-Define async action creator, making use of redux-thunk
+  eg: actions/index.js
+  //import statements
+
+  //other export consts
+
+  export const createRecord = (formValues) => {
+    
+  }
