@@ -11,3 +11,9 @@ export default connect(null, { createStream })(formWrapped)
   onSubmit(formValues) {
     this.props.createStream(formValues)
   }
+
+
+1. When user tries to submit form, inputs will be validated
+2. If inputs are valid, then call onSubmit()
+3. onSubmit() will call Action Creator: createStream
+4. createStream will attempt to make a POST request over to API server and create a new stream
