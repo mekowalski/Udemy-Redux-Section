@@ -17,3 +17,12 @@ FOLLOWING RESTFUL CONVENTIONS INSIDE APPLICATION
 
 -Eventually wire these up to their respective components when those are programmed
 -In general this may work out
+
+
+Step ONE:
+-Create all action types in actions/types.js
+export const CREATE_STREAM = 'CREATE_STREAM';
+export const FETCH_STREAMS = 'FETCH_STREAMS';
+export const FETCH_STREAM = 'FETCH_STREAM';
+export const DELETE_STREAM = 'DELETE_STREAM';
+export const EDIT_STREAM = 'EDIT_STREAM';
