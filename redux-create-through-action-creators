@@ -1,0 +1,2 @@
+CREATE A RECORD THROUGH ACTION CREATORS
+-Any time a user submits a Form, need to attempt making a network request over to API(that i created)
