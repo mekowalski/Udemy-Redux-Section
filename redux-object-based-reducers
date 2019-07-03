@@ -1,0 +1,3 @@
+OBJECT-BASED REDUCERS
+-Reducer Structure Option #1
+streamsReducer ---> [ stream | stream | stream | stream ]
