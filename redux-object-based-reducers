@@ -1,3 +1,16 @@
 OBJECT-BASED REDUCERS
+
 -Reducer Structure Option #1
+-Common(and most current way I've created) Reducers, for a list of records to maintain
+-Always returned an array of objects
 streamsReducer ---> [ stream | stream | stream | stream ]
+
+
+-Take a different approach to maintain an array of objects
+-Reducer Structure Option #2
+  eg:
+  streamsReducer ---> {
+                        3:  | stream w/ ID 3
+                        27: | stream w/ ID 27
+                        39: | stream w/ ID 39
+                      }
