@@ -20,3 +20,14 @@ streamsReducer ---> [ stream | stream | stream | stream ]
                         27: | stream w/ ID 27
                         39: | stream w/ ID 39
                       }
+
+
+-In order to access a given record, reference the record's piece of State out of Redux Store, then access
+ appropriate ID inside, which will give the record being requested
+-Updating/modifying will also be much simpler to do
+
+-Replacing an element in an array would be applied any time the Action Creator for editing
+-Whenever an edit Action Creator is called, it would be an attempt to updating a record on the API
+  1. Make the request to update the record
+  2. Then get the updated record back as the response from API
+  3. THEN, dispatch an action with type `EDIT_RECORD`(whatever the action name is), with payload
