@@ -8,8 +8,14 @@ streamsReducer ---> [ stream | stream | stream | stream ]
 
 -Take a different approach to maintain an array of objects
 -Reducer Structure Option #2
+-Still have a certain Reducer that would behave as a Reducer would
+-Add Reducer to combineReducers call
+-Instead of returning an array of records, it will return an object
+-This object will have all the records inside of it
+-Object will also have Key-Value pairs, (key: record ID, value: record with that matching ID)
   eg:
   streamsReducer ---> {
+                        KEY | VALUE
                         3:  | stream w/ ID 3
                         27: | stream w/ ID 27
                         39: | stream w/ ID 39
