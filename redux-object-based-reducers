@@ -31,3 +31,4 @@ streamsReducer ---> [ stream | stream | stream | stream ]
   1. Make the request to update the record
   2. Then get the updated record back as the response from API
   3. THEN, dispatch an action with type `EDIT_RECORD`(whatever the action name is), with payload
+-When the updated record is returned, 
