@@ -38,3 +38,15 @@ streamsReducer ---> [ stream | stream | stream | stream ]
  1. Put {} to indicate a new object
  2. Take all records out of old State object(...state) and add it in
  3. Then add in a new K-V pair(id: 6)
+
+
+EXAMPLES OF UPDATING
+-Array-Based Approach
+const streamReducer = (state=[], action) => {
+  switch (action.type) {
+    case EDIT_STREAM:
+
+    default:
+      return state
+  }
+}
