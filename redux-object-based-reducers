@@ -73,7 +73,9 @@ const streamReducer = (state=[], action) => {
 const streamReducer = (state={}, action) => {
   switch (action.type) {
     case EDIT_STREAM:
-      const newState = { ...state, }
+      const newState = { ...state }
+      newState[action.payload.id] = action.payload
+      return newState
     default:
       return state
   }
@@ -81,4 +83,8 @@ const streamReducer = (state={}, action) => {
 
 1. The State will default as an object
 2. Probably create newState that is EQUAL to an object{} (line 76)
-3. Take
+3. Take all the K-V pairs in State and spread them(...state) to return a new object from Reducer (line 76)
+4. Update appropriate K-V pair with keys: id, value: record itself
+5. newState will access the ID of action.payload, which is the record containing the ID (line 77)
+6. Set that to the new record (line 76)
+7. Finally return the new State (line)
