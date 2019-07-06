@@ -67,3 +67,18 @@ const streamReducer = (state=[], action) => {
 6. Handle else statement if it isn't the record being inquired (lines 52-54)
 
 -This is how much code is needed to find appropriate record inside of the Array and replace it via EDIT
+
+
+-Object-Based Approach
+const streamReducer = (state={}, action) => {
+  switch (action.type) {
+    case EDIT_STREAM:
+      const newState = { ...state, }
+    default:
+      return state
+  }
+}
+
+1. The State will default as an object
+2. Probably create newState that is EQUAL to an object{} (line 76)
+3. Take
