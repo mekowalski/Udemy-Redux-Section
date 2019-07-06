@@ -45,8 +45,19 @@ EXAMPLES OF UPDATING
 const streamReducer = (state=[], action) => {
   switch (action.type) {
     case EDIT_STREAM:
-
+      reutrn state.map(stream => {
+        if (stream.id === action.payload.id) {
+          return action.payload
+        }
+      })
     default:
       return state
   }
 }
+
+1. If the case were EDIT_STREAM then Action object would likely have Payload of newly updated record
+2. Would then need to look at the State array, find OLD record with same ID, remove & replace it with new
+   record inside that Action object
+3. Return State mapping, iterate over all records in State array
+4. If the old record ID is EQUAL to the NEW record that just came back from API (line 49)
+5. Please return the NEW record, NOT the OLD record (line 50)
