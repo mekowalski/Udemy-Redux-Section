@@ -90,7 +90,7 @@ const streamReducer = (state={}, action) => {
 7. Finally return the new State (line)
 
 
--ES2015 Syntax to Reduce the editing
+-ES2015 Syntax to Reduce the editing - Key Interpolation Syntax
 const streamsReducer = (state={}, action) => {
   switch (action.type) {
     case EDIT_STREAM:
@@ -104,3 +104,11 @@ const streamsReducer = (state={}, action) => {
 2. Square brackets[] will hold ID of action.payload
 3. The [action.payload.id] will be assigned to action.payload
 ***[action.payload.id] is NOT creating an array, this is referred to as Key interpolation***
+
+CONSOLE EXAMPLE:
+const animalSounds = { cat: 'meow', dog: 'bark' }       | New object with K-V pairs
+const animal = 'lion'                                   | At some point add new K-V pairs
+const sound = 'roar'                                    | But K/V are already assigned to some variables
+
+{ ...animalSounds, [animal]: sound }                    | Use animal/sound variables to add new K/V pair
+=> { cat: 'meow', dog: 'bark', lion: 'roar' }           | Return new object with added K/V pair
