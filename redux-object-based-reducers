@@ -88,3 +88,19 @@ const streamReducer = (state={}, action) => {
 5. newState will access the ID of action.payload, which is the record containing the ID (line 77)
 6. Set that to the new record (line 76)
 7. Finally return the new State (line)
+
+
+-ES2015 Syntax to Reduce the editing
+const streamsReducer = (state={}, action) => {
+  switch (action.type) {
+    case EDIT_STREAM:
+      return { ...state, [action.payload.id]: action.payload }
+    default:
+      return state
+  }
+}
+
+1. Return a new object with state
+2. Square brackets[] will hold ID of action.payload
+3. The [action.payload.id] will be assigned to action.payload
+***[action.payload.id] is NOT creating an array, this is referred to as Key interpolation***
