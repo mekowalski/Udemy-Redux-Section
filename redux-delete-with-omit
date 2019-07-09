@@ -1,0 +1,5 @@
+DELETING PROPERTIES WITH OMIT
+-How to alter an object
+DELETING a property from an object
+    BAD: delete state.name
+    GOOD: _.omit(state, 'name')
