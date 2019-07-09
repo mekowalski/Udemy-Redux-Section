@@ -7,4 +7,13 @@ DELETING a property from an object
 -_omit is given from the Lodash library
 -Call in _omit, pass in the State object as first argument
 -The second argument passed in would be the key that needs to be removed
-***in this case with the streams-app, ID is the key used***
+***in this case with the streams-app, ID is the key used, therefore the 2nd argument passed in would be
+the ID of the stream***
+
+
+-When deleting a record, the Action Creator, is dispatching an Action with the id on the payload property
+-Before, the payload would contain the entire record(stream) object
+-But with DELETE, it's a bit different, there is payload with only the ID by itself
+
+1. Install Lodash
+2. Wire an _omit statement inside the Reducer
