@@ -1,0 +1,7 @@
+MERGING A LIST OF RECORDS
+-Take an array of records(streams) from API and merge it all in State object
+-This is a bit more challenging
+-If there was an array to work with in the Reducer, it would be straightforward to kind of 'concat' the arrays
+ together
+
+-Since it's an object that's being worked with, need a different solution
