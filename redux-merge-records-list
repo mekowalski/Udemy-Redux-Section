@@ -5,3 +5,16 @@ MERGING A LIST OF RECORDS
  together
 
 -Since it's an object that's being worked with, need a different solution
+
+      ARRAY                                                   OBJECT
+    [                                                       {
+      id: 6                                                     id: 6
+      title: Title 6                                      6 ->  title: Title 6
+      description: Description 6                                description: Description 6
+      ,                                                         ,
+      id: 33                                                    id: 33
+      title: Title 33                                    33 ->  title: Title 33
+      description: Description 33                               description: Description 33
+    ]                                                       }
+
+    |---------------------->   mayKeys(streams, 'id') --->  |
