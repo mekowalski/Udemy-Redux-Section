@@ -28,6 +28,10 @@ eg: in a Reducer's switch expression
       case DELETE_STREAM:
       return _.omit(state, action.payload)
 
-      //default 
+      //default
     }
   }
+
+
+-_omit will not change the original State object, it creates a new object will all State properties that
+ have been altered/removed/added
