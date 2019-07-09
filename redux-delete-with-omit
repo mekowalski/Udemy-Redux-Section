@@ -16,4 +16,18 @@ the ID of the stream***
 -But with DELETE, it's a bit different, there is payload with only the ID by itself
 
 1. Install Lodash
+npm install --save lodash
+
 2. Wire an _omit statement inside the Reducer
+eg: in a Reducer's switch expression
+  export default (state = {}, action) {
+    switch (action.type) {
+      //case statement
+      //case statement
+
+      case DELETE_STREAM:
+      return _.omit(state, action.payload)
+
+      //default 
+    }
+  }
