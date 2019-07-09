@@ -3,3 +3,8 @@ DELETING PROPERTIES WITH OMIT
 DELETING a property from an object
     BAD: delete state.name
     GOOD: _.omit(state, 'name')
+
+-_omit is given from the Lodash library
+-Call in _omit, pass in the State object as first argument
+-The second argument passed in would be the key that needs to be removed
+***in this case with the streams-app, ID is the key used***
