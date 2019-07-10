@@ -1,8 +1,8 @@
 MERGING A LIST OF RECORDS
 -Take an array of records(streams) from API and merge it all in State object
 -This is a bit more challenging
--If there was an array to work with in the Reducer, it would be straightforward to kind of 'concat' the arrays
- together
+-If there was an array to work with in the Reducer, it would be straightforward to kind of 'concat' the
+ arrays together
 
 -Since it's an object that's being worked with, need a different solution
 
@@ -30,3 +30,18 @@ mapKeys(streams, 'id')
 -Call mapKeys, pass in an array of streams from API, and a string of id
 -String will tell Lodash, for every one of the objects from the original array, use a key taken from id
  property
+
+
+EXAMPLE
+const colors = [
+  { hue: 'yellow' },
+  { hue: 'green' },
+  { hue: 'white' }
+]
+
+_.mapKeys(colors, 'hue')
+=>
+  {'yellow': {'hue': 'yellow'},                     ***Created and object, took each object from array
+    'green': {'hue': 'green'},                         and added it to a new object, and the key for
+    'white': {'hue': 'white'}                          each one was the hue property***
+  }
