@@ -18,3 +18,15 @@ MERGING A LIST OF RECORDS
     ]                                                       }
 
     |---------------------->   mayKeys(streams, 'id') --->  |
+
+
+-Left Side: Array meant to represent the response received from API when a list is returned
+-In order for the list to be merged into object, use a function named mapKeys(), from Lodash
+  ***mapKeys() will take an array and return an object***
+-The keys for each new object is taken from each record inside the array
+
+mapKeys(call the array, 'string')
+mapKeys(streams, 'id')
+-Call mapKeys, pass in an array of streams from API, and a string of id
+-String will tell Lodash, for every one of the objects from the original array, use a key taken from id
+ property
