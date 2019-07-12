@@ -1,0 +1,5 @@
+RENDER ALL RECORDS
+***refer to streams-app/streams-client***
+
+-Within Record list component, need to make sure to get the list of records available as Props
+  eg: StreamList Component
