@@ -19,3 +19,13 @@ Modified Stream Object
     description:  | 'Description of title six'
     userId:       | 07301991
   }
+
+
+Current CREATE RECORD action creator
+-Passed the values of the form
+-Take both form values and userId
+-Make the 'post' request to the desired endpoint
+
+-Need to get userId inside Action Creator
+1. Call getState as 2nd argument in Action Creator
+  eg: createStream Action Creator
