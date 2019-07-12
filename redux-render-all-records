@@ -34,3 +34,19 @@ RENDER ALL RECORDS
 
   4. Map over the streams
     - For each stream, return some amount of JSX
+    - This is all optional JSX styling
+    renderList() {
+      return this.props.streams.map(stream => {
+        return (
+          <div className='item' key={stream.id}>
+            <i className='large middle aligned icon camera' /> //camera  icon
+            <div className='content'>
+              {stream.title}
+              <div className='description'>
+                {stream.description}
+              </div>
+            </div>
+          </div>
+        )
+      })
+    }
