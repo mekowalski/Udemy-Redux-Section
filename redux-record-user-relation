@@ -6,3 +6,16 @@ Current Stream Object
     title:        | 'Title Six'
     description:  | 'Description of title six'
   }
+
+
+Modified Stream Object
+-When a stream object is created, it needs to have a user ID for association of who made that record
+-User ID will come from Auth piece of State
+-During OAuth process, the actual ID was present(seen in Redux DevTools)
+-Take userId and attach it Stream Object when a stream is created with Create Form
+  {
+    id:           | 6
+    title:        | 'Title Six'
+    description:  | 'Description of title six'
+    userId:       | 07301991
+  }
