@@ -14,3 +14,13 @@ RENDER ALL RECORDS
     const mapStateToProps = (state) => {
       return { streams: }
     }
+
+  2. Map over an array from an object
+    - Work with state.streams
+    - To get the list of just the streams inside an array and not worry about object nature:
+    - Call Object.values() and pass in state.streams
+    - Object.values() built in JS function, take an object as an argument, all the values are pulled out,
+      then inserted into an array
+    const mapStateToProps = (state) => {
+      return { streams: Object,values(state.streams) }
+    }
