@@ -22,5 +22,15 @@ RENDER ALL RECORDS
     - Object.values() built in JS function, take an object as an argument, all the values are pulled out,
       then inserted into an array
     const mapStateToProps = (state) => {
-      return { streams: Object,values(state.streams) }
+      return { streams: Object.values(state.streams) }
     }
+
+  3. Call this.props.streams(array of all the streams) with renderList()
+    - Console.log(this.props.streams) does return an array of objects(woohoo!)
+    - renderList() will return the result of this.props.streams
+    renderList() {
+      return this.props.streams
+    }
+
+  4. Map over the streams
+    - For each stream, return some amount of JSX
