@@ -49,3 +49,19 @@ eg: createStream Action Creator
       dispatch({ type: CREATE_STREAM, payload: response.data })
     }
   }
+
+3. Combine userId and formValues into a single object
+  - Use similar syntax to what's been done inside reducer
+  - Wrap formValues with {}
+  - Take all KV pairs of formValues and add it the object via spread operator
+  - Also add in userId
+  - When new stream is posted to API, post all the values of the form along with userId who just created
+    the new record
+  export const createStream = (formValues) => {
+    return async (dispatch, getState) => {
+      const { userId } = getState().auth
+      const response = await streams.post('/streams', { ...formValues, userId})
+
+      dispatch({ type: CREATE_STREAM, payload: response.data })
+    }
+  }
