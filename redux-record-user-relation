@@ -26,11 +26,24 @@ Current CREATE RECORD action creator
 -Take both form values and userId
 -Make the 'post' request to the desired endpoint
 
--Need to get userId inside Action Creator
+eg: createStream Action Creator
 1. Call getState as 2nd argument in Action Creator
-  eg: createStream Action Creator
+  - Need to get userId inside Action Creator
   export const createStream = (formValues) => {
     return async (dispatch, getState) => {
+      const response = await streams.post('/streams', formValues)
+
+      dispatch({ type: CREATE_STREAM, payload: response.data })
+    }
+  }
+
+2. Destructure out userId within Action Creator
+  - Destructure userId from calling getState.auth
+  - getState returns the entire State object
+  - Then access auth piece of sate(.auth) and just pluck out the userId
+  export const createStream = (formValues) => {
+    return async (dispatch, getState) => {
+      const { userId } = getState().auth
       const response = await streams.post('/streams', formValues)
 
       dispatch({ type: CREATE_STREAM, payload: response.data })
