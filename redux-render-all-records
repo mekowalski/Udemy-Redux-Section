@@ -50,3 +50,15 @@ RENDER ALL RECORDS
         )
       })
     }
+
+  5. Need to call renderList() inside render()
+    render() {
+      return (
+        <div>
+          <h2>Streams</h2>
+          <div className='ui celled list'>
+            {this.renderList()}
+          </div>
+        </div>
+      )
+    }
