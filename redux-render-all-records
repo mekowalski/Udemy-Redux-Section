@@ -3,3 +3,14 @@ RENDER ALL RECORDS
 
 -Within Record list component, need to make sure to get the list of records available as Props
   eg: StreamList Component
+  1. Define mapStateToProps()
+    - Receive state as argument and return an object of streams property(containing all streams)
+    - Currently the streams are stored inside an object
+    - Probably want to map over list of streams
+    - Usually leave it as an object form inside Redux Store because it's easier to update/add/delete
+    - BUT when the records are taken into a component through mapStateToProps(), usually the object will be
+      turned into an actual array
+    - An array is much easier to map over
+    const mapStateToProps = (state) => {
+      return { streams: }
+    }
