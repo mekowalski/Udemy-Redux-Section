@@ -12,13 +12,16 @@ Goals:
 
 [] Create user stories
   -Overview
+  Build coffee drinks app that lists coffee drinks, allows users to add coffee drinks and notes on them
 
   -User Story: User should be able to:
   1. look up coffee drinks
   2. add coffee drinks they've had
   3. leave notes on the coffee drinks they've had
   4. look for coffee drinks they haven't had
-  5. maybe add WHERE they've had certain coffee drinks? (so much thinking)
+  5. maybe add WHERE they've had coffee drinks? (so much thinking)
+  6. have favorite coffee drinks or cafes?
+  7. DEFINITELY sign up and log in (optional)(maybe just hardcode a user first, myself!)
 
 [] Models and Relationships
 [] Build Rails API back end
