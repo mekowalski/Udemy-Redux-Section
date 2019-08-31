@@ -1,0 +1,12 @@
+Goals:
+
+[] Establish app idea, a domain
+[] Create user stories
+[] Models and Relationships
+[] Build Rails API back end
+[] Add serializers
+
+//IF all the above is accomplished, maybe start framing app layout on front end
+//such as what kind of components needed or will be used
+[] Use create-react-app, begin scaffold front end
+[] Maybe create Redux store
