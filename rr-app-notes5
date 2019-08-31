@@ -1,6 +1,12 @@
 Goals:
 
-[] Establish app idea, a domain
+[] Establish app idea, a domain, need to perform CRUD
+  -IDEAS
+    - calendar? tasks?
+    - coffee drinks log? like maybe steps on how to create a latte/americano/steamer/etc
+    - birthday keeper? store peoples' bdays and attach sign/birthstone/gift memos/etc
+    - music playlist? obviously create playlists/add songs/delete playlists or songs
+    - clothing store? sell your clothes/description/prices/maybe photo(s) of clothes (complicated?)
 [] Create user stories
 [] Models and Relationships
 [] Build Rails API back end
