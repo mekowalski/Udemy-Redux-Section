@@ -1,3 +1,5 @@
+***NOT RELATED TO UDEMY, JUST GOOD, SIMPLE ORGANIZATION FOR THIS NOTE FILE***
+
 Goals:
 
 [x] Establish app idea, a domain, need to perform CRUD
@@ -10,7 +12,7 @@ Goals:
     - (alcohol) drink app? recipe for popular drinks/comments on those drinks/sort by type?
     GOING WITH COFFEE DRINKS
 
-[] Create user stories
+[x] Create user stories
   -Overview
   Build coffee drinks app that lists coffee drinks, allows users to add coffee drinks and notes on them
 
@@ -24,6 +26,20 @@ Goals:
   7. DEFINITELY sign up and log in (optional)(maybe just hardcode a user first, myself!)
 
 [] Models and Relationships
+  - Coffee: name, hot/iced/other(type?), beanRoast(regular/blonde/dark?)
+    -Relationship: belongs to User, has many Notes
+
+  - User: name, username, password
+    -Relationship: has many Coffee, has many Notes, has many Locations/Cafes
+
+  - Location/Cafes: name, city, state
+    -Relationship: belongs to Coffee, belongs to User
+
+  - Notes: content
+    -Relationship: belongs to User, belongs to Coffee
+
+    ***is this all making sense?***
+
 [] Build Rails API back end
 [] Add serializers
 
