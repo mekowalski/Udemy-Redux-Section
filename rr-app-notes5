@@ -1,13 +1,25 @@
 Goals:
 
-[] Establish app idea, a domain, need to perform CRUD
+[x] Establish app idea, a domain, need to perform CRUD
   -IDEAS
     - calendar? tasks?
     - coffee drinks log? like maybe steps on how to create a latte/americano/steamer/etc
     - birthday keeper? store peoples' bdays and attach sign/birthstone/gift memos/etc
     - music playlist? obviously create playlists/add songs/delete playlists or songs
     - clothing store? sell your clothes/description/prices/maybe photo(s) of clothes (complicated?)
+    - (alcohol) drink app? recipe for popular drinks/comments on those drinks/sort by type?
+    GOING WITH COFFEE DRINKS
+
 [] Create user stories
+  -Overview
+
+  -User Story: User should be able to:
+  1. look up coffee drinks
+  2. add coffee drinks they've had
+  3. leave notes on the coffee drinks they've had
+  4. look for coffee drinks they haven't had
+  5. maybe add WHERE they've had certain coffee drinks? (so much thinking)
+
 [] Models and Relationships
 [] Build Rails API back end
 [] Add serializers
