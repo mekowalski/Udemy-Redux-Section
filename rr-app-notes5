@@ -26,17 +26,17 @@ Goals:
   7. DEFINITELY sign up and log in (optional)(maybe just hardcode a user first, myself!)
 
 [] Models and Relationships
-  - Coffee: name, hot/iced/other(type?), beanRoast(regular/blonde/dark?)
-    -Relationship: belongs to User, has many Notes
+  - Coffee: name, hot/iced/other(type?), beanRoast(regular/blonde/dark?), milk?, syrup?
+    -Relationship: belongs_to User, has_many Notes
 
   - User: name, username, password
-    -Relationship: has many Coffee, has many Notes, has many Locations/Cafes
+    -Relationship: has_many Coffee, has_many Notes, has_many Locations/Cafes, through: Coffee
 
   - Location/Cafes: name, city, state
-    -Relationship: belongs to Coffee, belongs to User
+    -Relationship: belongs_to Coffee, belongs_to User
 
-  - Notes: content
-    -Relationship: belongs to User, belongs to Coffee
+  - Notes: content, date
+    -Relationship: belongs_to User, belongs_to Coffee
 
     ***is this all making sense?***
 
