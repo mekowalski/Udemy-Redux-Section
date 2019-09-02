@@ -31,12 +31,15 @@ Goals:
 
   - Coffee: name, hot/iced/other(type?), beanRoast(regular/blonde/dark?), milk?, syrup?
     -Relationship: belongs_to User, has_many Notes
+    -will coffee have user_id?
 
   - Location/Cafes: name, city, state
     -Relationship: belongs_to Coffee, belongs_to User
+    -along with cafe having user_id?
 
   - Notes: date, content
     -Relationship: belongs_to User, belongs_to Coffee
+    -and notes with a user_id?
 
     ***is this all making sense?***
 
@@ -46,10 +49,13 @@ Goals:
     Location: Artifacts Gallery, Farmington, New Mexico
     Notes: 090119, The latte was smooth, due to the coconut milk, I think.  The temperature was perfect
       for a beginning start to the autumn season.  The vanilla wasn't too sweet, great compliment to the
-      espresson.
-      
+      espresso.
 
-[] Build Rails API back end
+
+[x] Build Rails API back end
+  -rails new app-name --api builds a smaller rails app without a lot of frontend power that rails offers
+  -Now this is more of an API that doesn't deal with views
+
 
 [] Add serializers
 
