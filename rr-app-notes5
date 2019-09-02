@@ -25,22 +25,32 @@ Goals:
   6. have favorite coffee drinks or cafes?
   7. DEFINITELY sign up and log in (optional)(maybe just hardcode a user first, myself!)
 
-[] Models and Relationships
-  - Coffee: name, hot/iced/other(type?), beanRoast(regular/blonde/dark?), milk?, syrup?
-    -Relationship: belongs_to User, has_many Notes
-
+[x] Models and Relationships
   - User: name, username, password
     -Relationship: has_many Coffee, has_many Notes, has_many Locations/Cafes, through: Coffee
+
+  - Coffee: name, hot/iced/other(type?), beanRoast(regular/blonde/dark?), milk?, syrup?
+    -Relationship: belongs_to User, has_many Notes
 
   - Location/Cafes: name, city, state
     -Relationship: belongs_to Coffee, belongs_to User
 
-  - Notes: content, date
+  - Notes: date, content
     -Relationship: belongs_to User, belongs_to Coffee
 
     ***is this all making sense?***
 
+    EXAMPLE:
+    User: me, myself and i
+    Coffee: Vanilla Latte, hot, with regular espresso, coconut milk and vanilla syrup
+    Location: Artifacts Gallery, Farmington, New Mexico
+    Notes: 090119, The latte was smooth, due to the coconut milk, I think.  The temperature was perfect
+      for a beginning start to the autumn season.  The vanilla wasn't too sweet, great compliment to the
+      espresson.
+      
+
 [] Build Rails API back end
+
 [] Add serializers
 
 //IF all the above is accomplished, maybe start framing app layout on front end
